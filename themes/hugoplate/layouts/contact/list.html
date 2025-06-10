@@ -194,14 +194,14 @@
 
           // Perform both fetch requests and wait for their results
           Promise.all([
-            fetch('https://crm.aegisoft.es/public/api/v1/inboxes/mmehNQEHTBK1hnu5PgPPk7hC/contacts', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-              },
-              body: JSON.stringify(data)
-            }),
+            // fetch('https://crm.aegisoft.es/public/api/v1/inboxes/mmehNQEHTBK1hnu5PgPPk7hC/contacts', {
+            //   method: 'POST',
+            //   headers: {
+            //     'Content-Type': 'application/json',
+            //     'Accept': 'application/json'
+            //   },
+            //   body: JSON.stringify(data)
+            // }),
             fetch('https://email.raise.systems/sendemail', {
               method: 'POST',
               body: formData,
@@ -209,29 +209,16 @@
                 'Accept': 'application/json'
               }
             })
-          ]).then(async ([crmResponse, emailResponse]) => {
-            let crmSuccess = crmResponse.ok;
+          ]).then(async ([emailResponse]) => {
             let emailSuccess = emailResponse.ok;
 
-            if (!crmSuccess) {
-              let crmError = await crmResponse.json();
-              let errorMessage = 'There was an error sending your message.';
-
-              // Handle specific error messages
-              if (crmError.message) {
-                errorMessage = crmError.message;
+            if (!emailSuccess) {
+              let emailError = await emailResponse.json();
+              let errorMessage = emailError.message || emailError.error || 'There was an error sending your email.';
 
                 // Format specific error messages to be more user-friendly
-                if (errorMessage.includes('e164 format')) {
-                  errorMessage = 'Phone number should be in international format (e.g., +34612345678)';
-                }
-              } else if (crmError.error) {
-                errorMessage = crmError.error;
-              }
-
-              // Display attributes that had errors if available
-              if (crmError.attributes && crmError.attributes.length > 0) {
-                errorMessage += ` (Fields with errors: ${crmError.attributes.join(', ')})`;
+              if (errorMessage.includes('e164 format')) {
+                errorMessage = 'Phone number should be in international format (e.g., +34612345678)';
               }
 
               showPopup(`Error: ${errorMessage}`, false);
@@ -247,7 +234,7 @@
               }
             }
 
-            if (crmSuccess && emailSuccess) {
+            if (emailSuccess) {
               form.reset();
               const inputs = form.querySelectorAll('input, textarea, button');
               inputs.forEach(input => input.disabled = true);
