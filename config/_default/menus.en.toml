@@ -1,0 +1,91 @@
+############# English navigation ##############
+
+# main menu
+[[main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[main]]
+name = "About"
+url = "/about"
+weight = 2
+
+[[main]]
+name = "Services"
+weight = 3
+
+[[main]]
+parent = "Services"
+name = "IAM Strategy & Architecture"
+url = "/services/strategy-architecture"
+weight = 1
+
+[[main]]
+parent = "Services"
+name = "Implementation & Integration"
+url = "/services/implementation-integration"
+weight = 2
+
+[[main]]
+parent = "Services"
+name = "Security & Compliance"
+url = "/services/security-compliance"
+weight = 3
+
+[[main]]
+parent = "Services"
+name = "Managed IAM Services"
+url = "/services/managed-services"
+weight = 4
+
+[[main]]
+name = "Resources"
+weight = 4
+
+[[main]]
+parent = "Resources"
+name = "Blog"
+url = "/blog"
+
+[[main]]
+parent = "Resources"
+name = "Case Studies"
+url = "/blog"
+
+[[main]]
+parent = "Resources"
+name = "IAM Experts"
+url = "/authors"
+
+[[main]]
+name = "Contact"
+url = "/contact"
+weight = 5
+
+
+# footer menu
+[[footer]]
+name = "About"
+url = "/about"
+weight = 1
+
+[[footer]]
+name = "Services"
+url = "/services"
+weight = 2
+
+[[footer]]
+name = "Blog"
+url = "/blog"
+weight = 3
+
+[[footer]]
+name = "Contact"
+url = "/contact"
+weight = 4
+
+[[footer]]
+name = "Privacy Policy"
+url = "/privacy-policy"
+weight = 5
