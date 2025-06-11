@@ -172,7 +172,7 @@
 
     // Execute reCAPTCHA Enterprise and then submit the form
     grecaptcha.enterprise.ready(function () {
-      grecaptcha.enterprise.execute('6LczHvEqAAAAAMGzi2wQOhHnyXul6VUrm5eoi3ch', { action: 'submit' })
+      grecaptcha.enterprise.execute('6Lf15FwrAAAAAKr-6yaXn8GyHLdt2yT5P7Pla--m', { action: 'submit' })
         .then(function (token) {
           document.getElementById('g-recaptcha-response').value = token;
 
@@ -194,14 +194,6 @@
 
           // Perform both fetch requests and wait for their results
           Promise.all([
-            // fetch('https://crm.aegisoft.es/public/api/v1/inboxes/mmehNQEHTBK1hnu5PgPPk7hC/contacts', {
-            //   method: 'POST',
-            //   headers: {
-            //     'Content-Type': 'application/json',
-            //     'Accept': 'application/json'
-            //   },
-            //   body: JSON.stringify(data)
-            // }),
             fetch('https://email.raise.systems/sendemail', {
               method: 'POST',
               body: formData,
