@@ -174,68 +174,65 @@
     grecaptcha.enterprise.ready(function () {
       grecaptcha.enterprise.execute('6Lf15FwrAAAAAKr-6yaXn8GyHLdt2yT5P7Pla--m', { action: 'submit' })
         .then(function (token) {
-          document.getElementById('g-recaptcha-response').value = token;
-
           const form = document.getElementById('contact-form');
           const formData = new FormData(form);
 
-          // Prepare data for Chatwoot API
-          const data = {
-            email: formData.get('email'),
-            name: formData.get('first_name') + ' ' + formData.get('last_name'),
-            phone_number: formData.get('phone'),
-            avatar_url: '',  // Add avatar URL if needed
-            custom_attributes: {
-              company: formData.get('company'),
-              subject: formData.get('subject'),
-              message: formData.get('message')
-            }
-          };
-
-          // Perform both fetch requests and wait for their results
-          Promise.all([
-            fetch('https://email.raise.systems/sendemail', {
-              method: 'POST',
-              body: formData,
-              headers: {
-                'Accept': 'application/json'
-              }
+          // Step 1: Verify the token with your backend
+          fetch('https://email.raise.systems/verifycaptcha', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+              recaptchaToken: token,
+              recaptchaAction: 'submit'
             })
-          ]).then(async ([emailResponse]) => {
-            let emailSuccess = emailResponse.ok;
-
-            if (!emailSuccess) {
-              let emailError = await emailResponse.json();
-              let errorMessage = emailError.message || emailError.error || 'There was an error sending your email.';
-
-                // Format specific error messages to be more user-friendly
-              if (errorMessage.includes('e164 format')) {
-                errorMessage = 'Phone number should be in international format (e.g., +34612345678)';
+          })
+            .then(response => response.json())
+            .then(verification => {
+              if (!verification.valid || !verification.actionMatch || verification.score < 0.5) {
+                let reason = verification.reasons?.join(', ') || 'Unknown reason';
+                showPopup(`reCAPTCHA verification failed (Score: ${verification.score}). Reason: ${reason}`, false);
+                return;
               }
 
-              showPopup(`Error: ${errorMessage}`, false);
-            }
+              // Step 2: CAPTCHA passed — continue form submission
+              formData.append('g-recaptcha-response', token);
 
-            if (!emailSuccess) {
-              try {
-                let emailError = await emailResponse.json();
-                let errorMessage = emailError.message || emailError.error || 'There was an error sending your email.';
-                showPopup(`Email Error: ${errorMessage}`, false);
-              } catch (e) {
-                showPopup('Email Error: There was an error sending your email.', false);
-              }
-            }
+              fetch('https://email.raise.systems/sendemail', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                  'Accept': 'application/json'
+                }
+              })
+                .then(async (emailResponse) => {
+                  if (!emailResponse.ok) {
+                    const emailError = await emailResponse.json();
+                    let errorMessage = emailError.message || emailError.error || 'There was an error sending your email.';
 
-            if (emailSuccess) {
-              form.reset();
-              const inputs = form.querySelectorAll('input, textarea, button');
-              inputs.forEach(input => input.disabled = true);
-              showPopup('Message sent successfully!', true);
-            }
-          }).catch(error => {
-            console.error('Form submission error:', error);
-            showPopup(`Error: ${error.message || 'There was an error sending your message.'}`, false);
-          });
+                    if (errorMessage.includes('e164 format')) {
+                      errorMessage = 'Phone number should be in international format (e.g., +34612345678)';
+                    }
+
+                    showPopup(`Email Error: ${errorMessage}`, false);
+                  } else {
+                    form.reset();
+                    const inputs = form.querySelectorAll('input, textarea, button');
+                    inputs.forEach(input => input.disabled = true);
+                    showPopup('Message sent successfully!', true);
+                  }
+                })
+                .catch(error => {
+                  console.error('Form submission error:', error);
+                  showPopup(`Error: ${error.message || 'There was an error sending your message.'}`, false);
+                });
+            })
+            .catch(error => {
+              console.error('reCAPTCHA verification failed:', error);
+              showPopup('Error verifying reCAPTCHA token. Please try again later.', false);
+            });
         });
     });
   });
