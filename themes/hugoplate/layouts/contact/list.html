@@ -191,7 +191,7 @@
           })
             .then(response => response.json())
             .then(verification => {
-              if (!verification.valid || !verification.actionMatch || verification.score < 0.5) {
+              if (!verification.valid || !verification.actionMatch || verification.score < 0.3) {
                 let reason = verification.reasons?.join(', ') || 'Unknown reason';
                 showPopup(`reCAPTCHA verification failed (Score: ${verification.score}). Reason: ${reason}`, false);
                 return;
