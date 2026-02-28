@@ -1,0 +1,28 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">IAM target architecture overview</title>
+  <desc id="desc">A simplified IAM architecture diagram with identity provider, applications, and monitoring controls.</desc>
+  <rect width="1200" height="700" fill="#0f172a"/>
+  <rect x="70" y="70" width="1060" height="560" rx="20" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <rect x="140" y="170" width="260" height="140" rx="12" fill="#1d4ed8"/>
+  <text x="170" y="225" fill="#ffffff" font-size="28" font-family="Arial">Identity Provider</text>
+  <text x="170" y="265" fill="#bfdbfe" font-size="20" font-family="Arial">Okta / Auth0 / Entra</text>
+  <rect x="470" y="120" width="260" height="120" rx="12" fill="#0ea5e9"/>
+  <text x="510" y="190" fill="#ffffff" font-size="24" font-family="Arial">SSO + MFA</text>
+  <rect x="470" y="300" width="260" height="120" rx="12" fill="#14b8a6"/>
+  <text x="520" y="370" fill="#ffffff" font-size="24" font-family="Arial">Lifecycle</text>
+  <rect x="470" y="480" width="260" height="120" rx="12" fill="#22c55e"/>
+  <text x="500" y="550" fill="#ffffff" font-size="24" font-family="Arial">Access Governance</text>
+  <rect x="810" y="170" width="260" height="140" rx="12" fill="#7c3aed"/>
+  <text x="860" y="225" fill="#ffffff" font-size="28" font-family="Arial">Applications</text>
+  <text x="855" y="265" fill="#ddd6fe" font-size="20" font-family="Arial">SaaS / APIs / Legacy</text>
+  <rect x="810" y="410" width="260" height="140" rx="12" fill="#f59e0b"/>
+  <text x="835" y="465" fill="#111827" font-size="24" font-family="Arial">Audit + Monitoring</text>
+  <text x="845" y="505" fill="#111827" font-size="20" font-family="Arial">DORA / GDPR evidence</text>
+  <line x1="400" y1="240" x2="470" y2="180" stroke="#e2e8f0" stroke-width="4"/>
+  <line x1="400" y1="240" x2="470" y2="360" stroke="#e2e8f0" stroke-width="4"/>
+  <line x1="400" y1="240" x2="470" y2="540" stroke="#e2e8f0" stroke-width="4"/>
+  <line x1="730" y1="180" x2="810" y2="240" stroke="#e2e8f0" stroke-width="4"/>
+  <line x1="730" y1="360" x2="810" y2="240" stroke="#e2e8f0" stroke-width="4"/>
+  <line x1="730" y1="540" x2="810" y2="480" stroke="#e2e8f0" stroke-width="4"/>
+  <text x="140" y="110" fill="#94a3b8" font-size="20" font-family="Arial">Reference IAM architecture (sanitized)</text>
+</svg>

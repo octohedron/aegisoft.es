@@ -1,0 +1,32 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Compliance control mapping visual</title>
+  <desc id="desc">Shows mapping from regulatory controls to IAM technical controls and evidence outputs.</desc>
+  <rect width="1200" height="700" fill="#0f172a"/>
+  <text x="80" y="80" fill="#f8fafc" font-size="34" font-family="Arial">Compliance to IAM Control Mapping</text>
+  <rect x="90" y="140" width="300" height="460" rx="14" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <rect x="450" y="140" width="300" height="460" rx="14" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <rect x="810" y="140" width="300" height="460" rx="14" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="130" y="190" fill="#93c5fd" font-size="24" font-family="Arial">Regulations</text>
+  <text x="490" y="190" fill="#6ee7b7" font-size="24" font-family="Arial">IAM Controls</text>
+  <text x="850" y="190" fill="#fcd34d" font-size="24" font-family="Arial">Evidence</text>
+  <text x="130" y="250" fill="#e2e8f0" font-size="20" font-family="Arial">DORA</text>
+  <text x="130" y="290" fill="#e2e8f0" font-size="20" font-family="Arial">GDPR</text>
+  <text x="130" y="330" fill="#e2e8f0" font-size="20" font-family="Arial">SOC 2</text>
+  <text x="130" y="370" fill="#e2e8f0" font-size="20" font-family="Arial">ISO 27001</text>
+  <text x="490" y="250" fill="#e2e8f0" font-size="20" font-family="Arial">MFA + policy enforcement</text>
+  <text x="490" y="290" fill="#e2e8f0" font-size="20" font-family="Arial">Access reviews + JML</text>
+  <text x="490" y="330" fill="#e2e8f0" font-size="20" font-family="Arial">Federation hardening</text>
+  <text x="490" y="370" fill="#e2e8f0" font-size="20" font-family="Arial">Logging + monitoring</text>
+  <text x="850" y="250" fill="#e2e8f0" font-size="20" font-family="Arial">Control test results</text>
+  <text x="850" y="290" fill="#e2e8f0" font-size="20" font-family="Arial">Review completion records</text>
+  <text x="850" y="330" fill="#e2e8f0" font-size="20" font-family="Arial">Policy and exception logs</text>
+  <text x="850" y="370" fill="#e2e8f0" font-size="20" font-family="Arial">Audit-ready reporting packs</text>
+  <line x1="390" y1="245" x2="450" y2="245" stroke="#94a3b8" stroke-width="3"/>
+  <line x1="390" y1="285" x2="450" y2="285" stroke="#94a3b8" stroke-width="3"/>
+  <line x1="390" y1="325" x2="450" y2="325" stroke="#94a3b8" stroke-width="3"/>
+  <line x1="390" y1="365" x2="450" y2="365" stroke="#94a3b8" stroke-width="3"/>
+  <line x1="750" y1="245" x2="810" y2="245" stroke="#94a3b8" stroke-width="3"/>
+  <line x1="750" y1="285" x2="810" y2="285" stroke="#94a3b8" stroke-width="3"/>
+  <line x1="750" y1="325" x2="810" y2="325" stroke="#94a3b8" stroke-width="3"/>
+  <line x1="750" y1="365" x2="810" y2="365" stroke="#94a3b8" stroke-width="3"/>
+</svg>

@@ -1,0 +1,33 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <section class="section">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-10 text-center mb-10">
+          <div class="content">{{ .Content }}</div>
+        </div>
+      </div>
+      <div class="row">
+        {{ range .RegularPages }}
+          <div class="md:col-6 mb-8">
+            <div class="bg-light dark:bg-darkmode-light rounded-lg p-7 h-full">
+              <h2 class="h4 mb-3">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </h2>
+              {{ with .Params.client_profile }}
+                <p class="mb-3"><strong>Client profile:</strong> {{ . }}</p>
+              {{ end }}
+              {{ with .Params.outcome_highlight }}
+                <p class="mb-4"><strong>Outcome:</strong> {{ . }}</p>
+              {{ end }}
+              <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">
+                Read case study <i class="fa fa-arrow-right pl-2"></i>
+              </a>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

@@ -1,0 +1,26 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">IAM delivery workflow</title>
+  <desc id="desc">A five-step workflow showing assessment, design, implementation, validation, and operations handover.</desc>
+  <rect width="1200" height="700" fill="#0b1120"/>
+  <text x="90" y="90" fill="#f8fafc" font-size="36" font-family="Arial">IAM Delivery Workflow</text>
+  <rect x="80" y="170" width="200" height="110" rx="12" fill="#1d4ed8"/>
+  <rect x="310" y="170" width="200" height="110" rx="12" fill="#2563eb"/>
+  <rect x="540" y="170" width="200" height="110" rx="12" fill="#0ea5e9"/>
+  <rect x="770" y="170" width="200" height="110" rx="12" fill="#14b8a6"/>
+  <rect x="1000" y="170" width="120" height="110" rx="12" fill="#22c55e"/>
+  <text x="118" y="235" fill="#ffffff" font-size="22" font-family="Arial">Assess</text>
+  <text x="368" y="235" fill="#ffffff" font-size="22" font-family="Arial">Design</text>
+  <text x="583" y="235" fill="#ffffff" font-size="22" font-family="Arial">Implement</text>
+  <text x="815" y="235" fill="#ffffff" font-size="22" font-family="Arial">Validate</text>
+  <text x="1018" y="235" fill="#ffffff" font-size="22" font-family="Arial">Operate</text>
+  <line x1="280" y1="225" x2="310" y2="225" stroke="#e2e8f0" stroke-width="4"/>
+  <line x1="510" y1="225" x2="540" y2="225" stroke="#e2e8f0" stroke-width="4"/>
+  <line x1="740" y1="225" x2="770" y2="225" stroke="#e2e8f0" stroke-width="4"/>
+  <line x1="970" y1="225" x2="1000" y2="225" stroke="#e2e8f0" stroke-width="4"/>
+  <rect x="80" y="340" width="1040" height="260" rx="16" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="120" y="390" fill="#cbd5e1" font-size="24" font-family="Arial">Output examples:</text>
+  <text x="120" y="440" fill="#e2e8f0" font-size="21" font-family="Arial">" Architecture decision records and rollout wave plans</text>
+  <text x="120" y="480" fill="#e2e8f0" font-size="21" font-family="Arial">" Risk register with mitigations and rollback strategy</text>
+  <text x="120" y="520" fill="#e2e8f0" font-size="21" font-family="Arial">" Compliance control mapping and audit evidence pack</text>
+  <text x="120" y="560" fill="#e2e8f0" font-size="21" font-family="Arial">" Operations runbooks and ownership handover</text>
+</svg>

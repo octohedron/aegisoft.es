@@ -1,0 +1,26 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Before and after IAM stack</title>
+  <desc id="desc">Comparison between fragmented legacy IAM and unified modern IAM.</desc>
+  <rect width="1200" height="700" fill="#020617"/>
+  <text x="180" y="80" fill="#f8fafc" font-size="34" font-family="Arial">Before</text>
+  <text x="760" y="80" fill="#f8fafc" font-size="34" font-family="Arial">After</text>
+  <rect x="90" y="120" width="430" height="500" rx="18" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <rect x="680" y="120" width="430" height="500" rx="18" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <rect x="130" y="170" width="160" height="90" rx="10" fill="#ef4444"/>
+  <rect x="320" y="170" width="160" height="90" rx="10" fill="#f97316"/>
+  <rect x="130" y="300" width="160" height="90" rx="10" fill="#eab308"/>
+  <rect x="320" y="300" width="160" height="90" rx="10" fill="#22c55e"/>
+  <rect x="225" y="430" width="160" height="90" rx="10" fill="#06b6d4"/>
+  <text x="150" y="225" fill="#0f172a" font-size="18" font-family="Arial">Legacy IdP A</text>
+  <text x="340" y="225" fill="#0f172a" font-size="18" font-family="Arial">Legacy IdP B</text>
+  <text x="155" y="355" fill="#0f172a" font-size="18" font-family="Arial">Manual Access</text>
+  <text x="350" y="355" fill="#0f172a" font-size="18" font-family="Arial">Siloed MFA</text>
+  <text x="250" y="485" fill="#0f172a" font-size="18" font-family="Arial">Limited Logs</text>
+  <rect x="730" y="220" width="330" height="110" rx="12" fill="#2563eb"/>
+  <rect x="730" y="370" width="330" height="110" rx="12" fill="#14b8a6"/>
+  <text x="790" y="285" fill="#ffffff" font-size="24" font-family="Arial">Unified IAM Core</text>
+  <text x="780" y="435" fill="#ffffff" font-size="24" font-family="Arial">Automated Controls</text>
+  <text x="760" y="560" fill="#cbd5e1" font-size="22" font-family="Arial">Fewer incidents " Faster onboarding " Better audits</text>
+  <path d="M545 350 L640 350" stroke="#e2e8f0" stroke-width="6"/>
+  <polygon points="640,350 620,338 620,362" fill="#e2e8f0"/>
+</svg>
