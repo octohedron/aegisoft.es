@@ -3,56 +3,73 @@ title: "About Aegisoft"
 meta_title: "About Aegisoft - Enterprise IAM Consulting"
 description: "Aegisoft is an enterprise IAM consultancy focused on measurable delivery outcomes across strategy, migration, security, and compliance."
 image: "/images/avatar.png"
+proof_points:
+  - "Enterprise IAM specialization across strategy, implementation, compliance, and operations"
+  - "Architecture-led delivery for regulated environments"
+  - "1 business day response SLA for consultation requests"
+best_for:
+  - "Regulated organizations with complex IAM architecture decisions"
+  - "Teams planning migrations across Okta/Auth0/Keycloak/Entra"
+  - "Programs requiring auditable DORA/GDPR-aligned control design"
+not_best_for:
+  - "General security transformations that are not IAM-centered"
+  - "License-only procurement with no architecture or delivery needs"
+primary_cta:
+  label: "Book Architecture Review"
+  link: "/consultation/book-iam-architecture-review/"
+secondary_cta:
+  label: "Review Case Studies"
+  link: "/case-studies/"
+reference_links:
+  - label: "Brand Facts"
+    link: "/brand-facts/"
+  - label: "Case Studies"
+    link: "/case-studies/"
+  - label: "Buyer Guides"
+    link: "/guides/"
+  - label: "Security and Compliance Methodology"
+    link: "/security-compliance-methodology/"
+  - label: "Legal Notice"
+    link: "/legal-notice/"
 draft: false
 ---
 
-## Your Trusted Partner in Identity & Access Management
+## What we do
 
-Aegisoft focuses exclusively on enterprise Identity and Access Management. We help regulated organizations modernize identity architecture with practical delivery plans, measurable outcomes, and clear governance.
+Aegisoft focuses exclusively on enterprise Identity and Access Management. We help regulated organizations modernize identity architecture with delivery plans that are practical, measurable, and aligned with operational constraints.
 
-## Our Approach
+## Who we work with
 
-Our work starts with context, constraints, and risk. We assess your current IAM estate, define a target-state architecture, and execute phased delivery with explicit rollback and operating models.
+We primarily support mid-to-large organizations in financial services, healthcare, SaaS, and public-sector environments where IAM quality directly affects resilience, compliance, and business velocity.
 
-## Proof and delivery evidence
+## How we deliver
 
-- Case studies include client profile, constraints, architecture choices, timeline, and measured outcomes
-- Typical outcomes include incident reduction, faster onboarding, and improved audit readiness
-- Delivery artifacts include architecture diagrams, control mappings, and implementation runbooks
-- See examples in our [Case Studies](/case-studies/) section
+Our model starts with context, risk, and constraints. We assess current state, define target-state architecture, and execute phased implementation with explicit rollback, operating model, and evidence expectations.
 
-## Technical Excellence
+### Typical first-phase outputs
 
-Our consultants work across major IAM platforms including Okta, Auth0, Microsoft Entra ID, and Keycloak, with deep protocol expertise in OAuth 2.1, OpenID Connect, SAML, SCIM, and WebAuthn.
+- Architecture baseline and risk profile
+- Prioritized roadmap with milestones
+- Platform/protocol decision log
+- Compliance control mapping and evidence approach
 
-## Enterprise Focus
+## Technical depth
 
-We serve medium to large organizations across financial services, healthcare, public sector, and SaaS. Engagements are designed to support enterprise scale and regulatory expectations including GDPR, DORA, HIPAA, and SOC-related controls.
+We work across Okta, Auth0, Microsoft Entra ID, Keycloak, and related enterprise IAM ecosystems. Our protocol specialization includes OAuth 2.0/2.1, OpenID Connect, SAML, SCIM, and WebAuthn.
 
-## Global Reach
+## Proof and credibility
 
-With consultants across North America and Europe, Aegisoft supports distributed teams and cross-region IAM programs through coordinated advisory and implementation delivery.
+- Case studies include client context, constraints, architecture choices, timeline, and measured outcomes
+- Methodology and guidance are published as buyer guides and technical resources
+- Company/legal transparency is available via legal notice, privacy policy, and brand facts
 
-## Experts and thought leadership
+## Why buyers choose Aegisoft
 
-- Meet our team on the [IAM Experts](/authors/) page
-- Explore implementation and protocol deep dives in the [Blog](/blog/)
-- Browse [Talks and Publications](/talks-publications/)
-- Review our [Security and Compliance Methodology](/security-compliance-methodology/)
-- Request topic-specific architecture reviews through the [Consultation](/consultation/) hub
+- IAM-only specialization, not broad generic consulting
+- Evidence-first delivery instead of narrative-only positioning
+- Vendor-aware, requirement-led architecture decisions
+- End-to-end support from strategy through managed operations
 
-## Legal and company transparency
+## Next step
 
-- **Legal name:** Aegisoft Consulting S.L.
-- **Registered jurisdiction:** Spain
-- **Legal details and disclosures:** [Legal Notice](/legal-notice/)
-- **Privacy and data handling:** [Privacy Policy](/privacy-policy/)
-
-## Why Choose Aegisoft
-
-- **IAM specialization:** focused identity expertise, not generic security consulting
-- **Evidence-first delivery:** specific architecture decisions and measurable outcomes
-- **Vendor-aware, requirement-led guidance:** recommendations tied to your constraints
-- **Execution capability:** strategy through implementation and managed operations
-
-[Talk to an IAM architect](/consultation)
+[Talk to an IAM architect](/consultation/)

@@ -3,10 +3,17 @@ title: "IAM Strategy & Architecture"
 meta_title: "IAM Strategy & Architecture Services - Aegisoft"
 description: "Develop a comprehensive identity and access management strategy and architecture aligned with your business objectives and security requirements."
 image: "/images/proof-iam-architecture.svg"
+faqs:
+  - question: "What is the expected output of the strategy engagement?"
+    answer: "A decision-ready target-state architecture, roadmap, and prioritized implementation plan."
+  - question: "How long does the strategy phase take?"
+    answer: "Most strategy and architecture phases run between 2 and 6 weeks."
 draft: false
 ---
 
 Design an IAM strategy that can pass enterprise scrutiny: clear target-state architecture, practical migration sequencing, and measurable risk reduction.
+
+> **TL;DR recommendation:** Use this service when your organization needs a decision-grade IAM target architecture and roadmap before implementation. The first phase typically delivers a current-state baseline, target-state options, and a phased plan with risks, constraints, and measurable outcomes.
 
 ## Who this is for
 
@@ -49,6 +56,11 @@ Design an IAM strategy that can pass enterprise scrutiny: clear target-state arc
 - Identity data and lifecycle design
 - Multi-cloud and hybrid identity architecture
 
+## Relevant platforms and protocols
+
+- Platforms: Okta, Auth0, Microsoft Entra ID, Keycloak, ForgeRock, Ping Identity
+- Protocols: OAuth 2.0/2.1, OIDC, SAML, SCIM, FIDO2/WebAuthn
+
 ## Mini proof strip
 
 - Consolidated 12 legacy identity systems for a global financial institution
@@ -61,4 +73,18 @@ See the full delivery narrative:
 
 ## Next step
 
-[Book a 30-minute architecture review](/consultation)
+[Request IAM Strategy Assessment](/offers/iam-strategy-assessment/)
+
+## FAQ
+
+### What is the expected output of the strategy engagement?
+
+A decision-ready target-state architecture, roadmap, and prioritized implementation plan.
+
+### How long does the strategy phase take?
+
+Most strategy assessments and architecture definition phases run between 2 and 6 weeks.
+
+### Can this include vendor selection guidance?
+
+Yes. Vendor comparison and selection criteria can be included as part of the architecture and roadmap work.

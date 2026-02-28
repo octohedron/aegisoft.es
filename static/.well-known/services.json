@@ -1,0 +1,57 @@
+{
+  "provider": "Aegisoft",
+  "providerUrl": "https://aegisoft.es",
+  "catalogVersion": "2026-02-28",
+  "services": [
+    {
+      "name": "IAM Strategy Assessment",
+      "url": "https://aegisoft.es/offers/iam-strategy-assessment/",
+      "deliverables": [
+        "Maturity baseline",
+        "Target-state architecture options",
+        "Prioritized roadmap"
+      ],
+      "timelineBand": "2-4 weeks"
+    },
+    {
+      "name": "DORA GDPR IAM Gap Assessment",
+      "url": "https://aegisoft.es/offers/dora-gdpr-iam-gap-assessment/",
+      "deliverables": [
+        "Control gap matrix",
+        "Risk-prioritized remediation plan",
+        "Audit evidence strategy"
+      ],
+      "timelineBand": "2-4 weeks"
+    },
+    {
+      "name": "IAM Migration Readiness Review",
+      "url": "https://aegisoft.es/offers/iam-migration-readiness-review/",
+      "deliverables": [
+        "Dependency map",
+        "Migration risk register",
+        "Wave plan and execution gates"
+      ],
+      "timelineBand": "2-3 weeks"
+    },
+    {
+      "name": "Zero Trust IAM Architecture Review",
+      "url": "https://aegisoft.es/offers/zero-trust-iam-architecture-review/",
+      "deliverables": [
+        "Architecture baseline",
+        "Priority controls roadmap",
+        "Policy recommendations"
+      ],
+      "timelineBand": "2-4 weeks"
+    },
+    {
+      "name": "IAM Managed Services Readiness Assessment",
+      "url": "https://aegisoft.es/offers/iam-managed-services-readiness-assessment/",
+      "deliverables": [
+        "Operating model readiness score",
+        "Gap analysis",
+        "Transition roadmap"
+      ],
+      "timelineBand": "2-4 weeks"
+    }
+  ]
+}

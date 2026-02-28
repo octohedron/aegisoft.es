@@ -22,4 +22,4 @@ Build scalable authentication and authorization foundations for B2B and B2C SaaS
 - Integration and policy design decisions
 - Phased implementation plan with risk controls
 
-[Request a SaaS IAM readiness review](/contact)
+[Request a SaaS IAM readiness review](/offers/iam-migration-readiness-review/)

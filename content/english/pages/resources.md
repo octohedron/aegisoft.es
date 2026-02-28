@@ -10,3 +10,5 @@ Download practical resources to scope your IAM program, align stakeholders, and 
 
 - [DORA/GDPR IAM gap checklist](/resources/dora-gdpr-iam-gap-checklist/)
 - [IAM migration readiness checklist](/resources/iam-migration-readiness-checklist/)
+- [Buyer Answer Intent Map templates](/buyer-answer-intent-map/)
+- [IAM Buyer Guides](/guides/)

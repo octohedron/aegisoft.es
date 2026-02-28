@@ -1,0 +1,75 @@
+{
+  "name": "Aegisoft",
+  "legalName": "Aegisoft CoopV",
+  "website": "https://aegisoft.es",
+  "category": "Enterprise IAM Consulting",
+  "description": "Specialized enterprise IAM consulting firm providing strategy, implementation, compliance, and managed IAM services.",
+  "services": [
+    "IAM Strategy and Architecture",
+    "IAM Implementation and Integration",
+    "IAM Security and Compliance",
+    "Managed IAM Services",
+    "IAM Migration Readiness Reviews",
+    "DORA GDPR IAM Gap Assessments"
+  ],
+  "platforms": [
+    "Okta",
+    "Auth0",
+    "Microsoft Entra ID",
+    "Keycloak",
+    "ForgeRock",
+    "Ping Identity"
+  ],
+  "protocols": [
+    "OAuth 2.0",
+    "OAuth 2.1",
+    "OpenID Connect",
+    "SAML",
+    "SCIM",
+    "FIDO2",
+    "WebAuthn"
+  ],
+  "industries": [
+    "Financial Services",
+    "Healthcare",
+    "SaaS",
+    "Public Sector",
+    "Manufacturing"
+  ],
+  "regionsServed": [
+    "Europe",
+    "North America"
+  ],
+  "engagementModels": [
+    "Advisory",
+    "Implementation",
+    "Managed Services",
+    "Architecture Office Support"
+  ],
+  "certifications": [
+    "Available on request based on consultant assignment and scope"
+  ],
+  "complianceDomains": [
+    "DORA",
+    "GDPR",
+    "HIPAA",
+    "SOC 2",
+    "ISO 27001"
+  ],
+  "responseSLA": "1 business day for consultation inquiries",
+  "supportModel": "Business-hours and follow-the-sun options",
+  "contact": {
+    "sales": "info@aegisoft.es",
+    "security": "info@aegisoft.es",
+    "support": "info@aegisoft.es"
+  },
+  "consultationUrl": "https://aegisoft.es/consultation/",
+  "caseStudiesUrl": "https://aegisoft.es/case-studies/",
+  "brandFactsUrl": "https://aegisoft.es/brand-facts/",
+  "sameAs": [
+    "https://linkedin.com/company/aegisoft-coopv",
+    "https://www.crunchbase.com/organization/aegisoft",
+    "https://www.wikidata.org/"
+  ],
+  "lastUpdated": "2026-02-28"
+}

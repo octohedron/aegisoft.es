@@ -7,10 +7,19 @@ image: "/images/gdpr-dora-0.png"
 categories: ["Compliance", "Regulations"]
 author: "Gustavo Rodríguez"
 tags: ["GDPR", "DORA", "compliance", "EU regulations"]
+faqs:
+  - question: "Can one IAM framework support both DORA and GDPR requirements?"
+    answer: "Yes, with control mapping and evidence design aligned to both frameworks."
+  - question: "What is the most common implementation mistake?"
+    answer: "Treating compliance as documentation-only work instead of operational control design."
 draft: false
 ---
 
 Identity and Access Management (IAM) systems sit at the intersection of data protection and operational resilience, making them critical components for compliance with both the General Data Protection Regulation (GDPR) and the Digital Operational Resilience Act (DORA). This technical guide explores how to architect and configure IAM systems to meet these regulatory requirements while maintaining security and usability.
+
+## Decision summary
+
+For DORA/GDPR programs, prioritize IAM controls that are both operationally resilient and audit-evident: adaptive authentication, access governance, incident response workflows, and policy-aligned data handling. Compliance success depends on execution quality, not control checklists alone.
 
 > Need to assess your IAM design against DORA/GDPR requirements?  
 > [Request a 60-minute compliance architecture review](/consultation)
@@ -237,3 +246,16 @@ At Aegisoft, we specialize in designing and implementing compliant IAM solutions
 
 Related delivery example:  
 [EU Payments Processor: DORA-Aligned IAM Modernization](/case-studies/eu-payments-dora-migration)
+
+Related decision guide:  
+[Best IAM Consulting for DORA/GDPR Compliance (2026)](/guides/best-iam-consulting-for-dora-gdpr-compliance-2026/)
+
+## FAQ
+
+### Can one IAM control framework support both DORA and GDPR?
+
+Yes. A shared IAM control architecture can map to both frameworks when evidence requirements are modeled correctly.
+
+### What is the most common implementation mistake?
+
+Treating compliance as documentation-only work instead of architecture, operations, and incident-readiness work.

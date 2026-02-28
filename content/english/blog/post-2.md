@@ -7,10 +7,19 @@ image: "/images/oauth-2.1-0.png"
 categories: ["Protocols", "Security Standards"]
 author: "Gustavo Rodríguez"
 tags: ["OAuth", "security", "authentication"]
+faqs:
+  - question: "Should OAuth 2.1 migration be a full rewrite?"
+    answer: "No. Most organizations can run phased updates with targeted hardening."
+  - question: "What is the highest-impact first step?"
+    answer: "Enforce PKCE and retire implicit flow usage where still present."
 draft: false
 ---
 
 OAuth 2.0 has been the industry standard for authorization since 2012, but the emerging OAuth 2.1 specification aims to address several security vulnerabilities and implementation challenges. For enterprise architects and IAM specialists, understanding these differences is crucial for making informed decisions about authentication infrastructure.
+
+## Decision summary
+
+If your environment still depends on legacy OAuth 2.0 patterns, move to OAuth 2.1-aligned controls incrementally: adopt PKCE everywhere, retire implicit flow usage, tighten redirect validation, and improve token lifecycle security before full migration.
 
 > Need to validate your OAuth architecture and migration path?  
 > [Book a 30-minute architecture review](/consultation)
@@ -100,3 +109,19 @@ By embracing OAuth 2.1's security improvements, enterprises can significantly en
 
 Also read:  
 [Okta to Auth0 Migration Consulting](/okta-to-auth0-migration-consulting/)
+
+Related decision guide:  
+[How to Choose an Enterprise IAM Implementation Partner](/guides/how-to-choose-an-enterprise-iam-implementation-partner/)
+
+Related case study:  
+[B2C SaaS Platform: Auth0 Federation and Scale Modernization](/case-studies/b2c-auth0-federation-scale/)
+
+## FAQ
+
+### Should OAuth 2.1 migration be a full rewrite?
+
+No. Most organizations can execute phased hardening and protocol updates without full rewrites.
+
+### What is the highest-impact first step?
+
+Enforce PKCE and deprecate implicit flow usage across all relevant clients.

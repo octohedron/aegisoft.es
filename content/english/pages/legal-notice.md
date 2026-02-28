@@ -7,10 +7,10 @@ draft: false
 
 ## Company Information
 
-- **Legal name:** Aegisoft Consulting S.L.
-- **Registered office:** Madrid, Spain
-- **Tax ID (VAT/NIF):** ESB00000000
-- **Contact email:** legal@aegisoft.es
+- **Legal name:** Aegisoft CoopV
+- **Registered office:** Valencia, Spain
+- **Tax ID (VAT/NIF):** ESF75405555
+- **Contact email:** info@aegisoft.es
 
 > Replace the placeholder VAT/NIF and registered office details with your official legal registration data before publishing.
 

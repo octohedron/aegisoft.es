@@ -17,9 +17,9 @@ Use the form to choose your engagement path and share context. We reply within *
 
 ## Alternative contact methods
 
-- **Architecture consultations:** consultation@aegisoft.es
-- **Support:** support@aegisoft.es
-- **Partnerships:** partners@aegisoft.es
+- **Architecture consultations:** info@aegisoft.es
+- **Support:** info@aegisoft.es
+- **Partnerships:** info@aegisoft.es
 
 ## Privacy
 

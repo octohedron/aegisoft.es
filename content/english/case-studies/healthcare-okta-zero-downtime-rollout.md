@@ -4,6 +4,11 @@ meta_title: "Case Study: Zero-Downtime IAM Rollout for Healthcare"
 description: "How a healthcare provider rolled out Okta-based IAM across clinical and administrative systems while improving access security and user experience."
 client_profile: "Multi-site healthcare provider, 50,000 staff, 500+ applications"
 outcome_highlight: "99.99% IAM availability, 80% faster sign-in experience, and materially faster HIPAA audit preparation."
+author: "Gustavo Rodríguez"
+tags: ["HIPAA", "healthcare", "Okta", "IAM implementation"]
+faqs:
+  - question: "Is zero-downtime IAM rollout realistic in healthcare environments?"
+    answer: "Yes, with phased deployment, rollback planning, and operational alignment."
 draft: false
 ---
 
@@ -63,7 +68,7 @@ The client relied on fragmented authentication patterns across clinical and admi
 
 ## Testimonial
 
-> "The rollout was methodical, low-risk, and operationally realistic. Clinical teams gained smoother access while we improved audit confidence."
+> The rollout was methodical, low-risk, and operationally realistic. Clinical teams gained smoother access while we improved audit confidence.
 >
 > **VP Infrastructure, multi-site healthcare provider (50k staff)**
 

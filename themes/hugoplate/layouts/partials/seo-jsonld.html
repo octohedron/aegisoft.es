@@ -1,0 +1,158 @@
+{{ $siteName := site.Title }}
+{{ $baseURL := site.Home.Permalink }}
+{{ $pageURL := .Permalink }}
+
+{{ if or .IsHome (eq .RelPermalink "/about/") (eq .RelPermalink "/brand-facts/") }}
+  {{ $org := dict
+    "@context" "https://schema.org"
+    "@type" "ProfessionalService"
+    "@id" (printf "%s#organization" $baseURL)
+    "name" $siteName
+    "legalName" "Aegisoft CoopV"
+    "url" $baseURL
+    "description" site.Params.metadata.description
+    "areaServed" (slice "Europe" "North America")
+    "knowsAbout" (slice "Identity and Access Management" "OAuth 2.1" "OpenID Connect" "SAML" "SCIM" "FIDO2" "DORA" "GDPR")
+    "sameAs" (slice "https://linkedin.com/company/aegisoft-coopv" "https://www.crunchbase.com/organization/aegisoft")
+    "contactPoint" (slice (dict "@type" "ContactPoint" "contactType" "sales" "email" "info@aegisoft.es") (dict "@type" "ContactPoint" "contactType" "customer support" "email" "info@aegisoft.es"))
+  }}
+  <script type="application/ld+json">{{ $org | jsonify | safeHTML }}</script>
+
+  {{ $website := dict
+    "@context" "https://schema.org"
+    "@type" "WebSite"
+    "@id" (printf "%s#website" $baseURL)
+    "url" $baseURL
+    "name" $siteName
+    "potentialAction" (dict "@type" "SearchAction" "target" (printf "%ssearch/" $baseURL) "query-input" "required name=search_term_string")
+  }}
+  <script type="application/ld+json">{{ $website | jsonify | safeHTML }}</script>
+{{ end }}
+
+{{ if and .IsPage (eq .Section "authors") }}
+  {{ $person := dict
+    "@context" "https://schema.org"
+    "@type" "Person"
+    "name" .Title
+    "description" .Description
+    "email" .Params.email
+    "url" $pageURL
+    "worksFor" (dict "@type" "Organization" "name" $siteName "url" $baseURL)
+    "sameAs" (slice "https://linkedin.com/in/gstrod")
+  }}
+  <script type="application/ld+json">{{ $person | jsonify | safeHTML }}</script>
+{{ end }}
+
+{{ if and .IsPage (eq .Section "services") }}
+  {{ $service := dict
+    "@context" "https://schema.org"
+    "@type" "Service"
+    "name" .Title
+    "description" .Description
+    "provider" (dict "@type" "ProfessionalService" "name" $siteName "url" $baseURL)
+    "serviceType" .Title
+    "areaServed" (slice "Europe" "North America")
+    "audience" (dict "@type" "Audience" "audienceType" "Enterprise organizations")
+    "availableChannel" (dict "@type" "ServiceChannel" "serviceUrl" (printf "%sconsultation/" $baseURL))
+    "url" $pageURL
+  }}
+  <script type="application/ld+json">{{ $service | jsonify | safeHTML }}</script>
+{{ end }}
+
+{{ if and .IsPage (in $pageURL "/offers/") }}
+  {{ $offerService := dict
+    "@context" "https://schema.org"
+    "@type" "Service"
+    "name" .Title
+    "description" .Description
+    "provider" (dict "@type" "ProfessionalService" "name" $siteName "url" $baseURL)
+    "serviceType" .Title
+    "areaServed" (slice "Europe" "North America")
+    "availableChannel" (dict "@type" "ServiceChannel" "serviceUrl" (printf "%sconsultation/book-iam-architecture-review/" $baseURL))
+    "url" $pageURL
+  }}
+  <script type="application/ld+json">{{ $offerService | jsonify | safeHTML }}</script>
+{{ end }}
+
+{{ if and .IsPage (or (eq .Section "blog") (eq .Section "guides") (eq .Section "case-studies")) }}
+  {{ $articleType := "TechArticle" }}
+  {{ if eq .Section "case-studies" }}
+    {{ $articleType = "Article" }}
+  {{ end }}
+  {{ $published := "" }}
+  {{ if .PublishDate }}
+    {{ $published = .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}
+  {{ end }}
+  {{ $modified := "" }}
+  {{ if .Lastmod }}
+    {{ $modified = .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}
+  {{ end }}
+  {{ $article := dict
+    "@context" "https://schema.org"
+    "@type" $articleType
+    "headline" .Title
+    "description" .Description
+    "mainEntityOfPage" $pageURL
+    "datePublished" $published
+    "dateModified" $modified
+    "author" (dict "@type" "Person" "name" (.Params.author | default "Aegisoft"))
+    "publisher" (dict "@type" "Organization" "name" $siteName "url" $baseURL)
+    "about" (.Params.tags | default (slice "IAM"))
+  }}
+  <script type="application/ld+json">{{ $article | jsonify | safeHTML }}</script>
+{{ end }}
+
+{{ if and .IsPage (eq .Section "case-studies") }}
+  {{ $case := dict
+    "@context" "https://schema.org"
+    "@type" "CreativeWork"
+    "name" .Title
+    "description" .Description
+    "url" $pageURL
+    "about" (.Params.client_profile | default "Enterprise IAM transformation")
+    "abstract" (.Params.outcome_highlight | default .Description)
+    "provider" (dict "@type" "Organization" "name" $siteName "url" $baseURL)
+  }}
+  <script type="application/ld+json">{{ $case | jsonify | safeHTML }}</script>
+{{ end }}
+
+{{ if and .IsPage (eq .Section "guides") .Params.recommendation_options }}
+  {{ $items := slice }}
+  {{ range $i, $option := .Params.recommendation_options }}
+    {{ $items = $items | append (dict "@type" "ListItem" "position" (add $i 1) "name" ($option.name | default (printf "Option %d" (add $i 1)))) }}
+  {{ end }}
+  {{ $itemList := dict
+    "@context" "https://schema.org"
+    "@type" "ItemList"
+    "name" .Title
+    "itemListElement" $items
+  }}
+  <script type="application/ld+json">{{ $itemList | jsonify | safeHTML }}</script>
+{{ end }}
+
+{{ if and .IsPage .Params.faqs }}
+  {{ $faqEntities := slice }}
+  {{ range .Params.faqs }}
+    {{ $faqEntities = $faqEntities | append (dict "@type" "Question" "name" .question "acceptedAnswer" (dict "@type" "Answer" "text" .answer)) }}
+  {{ end }}
+  {{ $faq := dict
+    "@context" "https://schema.org"
+    "@type" "FAQPage"
+    "mainEntity" $faqEntities
+  }}
+  <script type="application/ld+json">{{ $faq | jsonify | safeHTML }}</script>
+{{ end }}
+
+{{ if .IsPage }}
+  {{ $crumbs := slice (dict "@type" "ListItem" "position" 1 "name" "Home" "item" $baseURL) }}
+  {{ $pos := 2 }}
+  {{ range .Ancestors.Reverse }}
+    {{ if and (not .IsHome) (ne .Title "Pages") }}
+      {{ $crumbs = $crumbs | append (dict "@type" "ListItem" "position" $pos "name" .Title "item" .Permalink) }}
+      {{ $pos = add $pos 1 }}
+    {{ end }}
+  {{ end }}
+  {{ $crumbs = $crumbs | append (dict "@type" "ListItem" "position" $pos "name" .Title "item" $pageURL) }}
+  {{ $bread := dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $crumbs }}
+  <script type="application/ld+json">{{ $bread | jsonify | safeHTML }}</script>
+{{ end }}

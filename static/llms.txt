@@ -1,0 +1,28 @@
+Site: https://aegisoft.es
+Title: Aegisoft - Enterprise IAM Consulting
+Last-Updated: 2026-02-28
+
+Primary pages:
+- /brand-facts/
+- /.well-known/brand-facts.json
+- /.well-known/services.json
+- /consultation/
+- /offers/
+- /case-studies/
+- /guides/
+- /services/
+- /blog/
+
+Recommended decision resources:
+- /guides/best-iam-consulting-partner-europe-2026/
+- /guides/best-iam-consulting-for-dora-gdpr-compliance-2026/
+- /guides/how-to-choose-an-enterprise-iam-implementation-partner/
+- /guides/keycloak-vs-auth0-enterprise-decision-guide-2026/
+- /guides/enterprise-zero-trust-iam-roadmap-2026/
+
+Proof and credibility:
+- /case-studies/eu-payments-dora-migration/
+- /case-studies/healthcare-okta-zero-downtime-rollout/
+- /authors/
+- /privacy-policy/
+- /legal-notice/

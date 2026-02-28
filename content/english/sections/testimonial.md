@@ -27,7 +27,7 @@ testimonials:
     designation: "CTO, B2B SaaS platform (enterprise + SMB tenants)"
     avatar: "/images/avatar-sm.png"
     content: "We needed multi-tenant federation across SAML and OIDC with strict enterprise onboarding requirements. Aegisoft delivered a maintainable architecture and implementation plan that our internal team could operate confidently."
-    case_study_link: "/services/implementation-integration"
+    case_study_link: "/case-studies/b2c-auth0-federation-scale"
 
 # don't create a separate page
 _build:

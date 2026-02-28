@@ -1,6 +1,6 @@
 ---
 title: Gustavo Rodríguez
-email: gustavo.rodriguez@aegisoft.es
+email: info@aegisoft.es
 image: "/images/portrait-gus.png"
 description: "Founder and CEO of Aegisoft"
 social:

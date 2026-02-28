@@ -4,6 +4,11 @@ meta_title: "Case Study: DORA-Aligned IAM Modernization for EU Payments"
 description: "How an EU payments processor modernized IAM architecture under DORA deadlines without customer login disruption."
 client_profile: "EU payments processor, 2,500 employees, operations across 9 countries"
 outcome_highlight: "DORA remediation delivered on deadline, zero customer downtime, 68% reduction in identity incidents."
+author: "Gustavo Rodríguez"
+tags: ["DORA", "GDPR", "IAM migration", "financial services"]
+faqs:
+  - question: "Can this delivery model work for other regulated sectors?"
+    answer: "Yes, the phased architecture and evidence model applies across regulated industries."
 draft: false
 ---
 
@@ -63,7 +68,7 @@ The client was operating multiple disconnected IAM components across workforce a
 
 ## Testimonial
 
-> "The architecture decisions were practical and audit-ready. We hit our DORA commitments without disrupting business operations."
+> The architecture decisions were practical and audit-ready. We hit our DORA commitments without disrupting business operations.
 >
 > **CISO, EU payments processor (2,500 employees)**
 

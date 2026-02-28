@@ -27,9 +27,10 @@ Aegisoft delivers IAM services across strategy, implementation, security/complia
 
 ## Conversion paths
 
-- [Book a 30-minute IAM architecture review](/consultation)
-- [Get a DORA/GDPR IAM gap checklist](/resources/dora-gdpr-iam-gap-checklist)
-- [Request an IAM migration readiness review](/resources/iam-migration-readiness-checklist)
+- [IAM Strategy Assessment](/offers/iam-strategy-assessment/)
+- [DORA/GDPR IAM Gap Assessment](/offers/dora-gdpr-iam-gap-assessment/)
+- [IAM Migration Readiness Review](/offers/iam-migration-readiness-review/)
+- [IAM Managed Services Readiness Assessment](/offers/iam-managed-services-readiness-assessment/)
 
 ## Industry-specific strategy pages
 

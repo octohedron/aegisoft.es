@@ -64,6 +64,16 @@ name = "Checklists"
 url = "/resources"
 
 [[main]]
+parent = "Resources"
+name = "Guides"
+url = "/guides"
+
+[[main]]
+parent = "Resources"
+name = "Brand Facts"
+url = "/brand-facts"
+
+[[main]]
 name = "Contact"
 url = "/contact"
 weight = 5
@@ -109,3 +119,8 @@ weight = 6
 name = "Legal Notice"
 url = "/legal-notice"
 weight = 7
+
+[[footer]]
+name = "Brand Facts"
+url = "/brand-facts"
+weight = 8

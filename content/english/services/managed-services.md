@@ -3,10 +3,17 @@ title: "Managed IAM Services"
 meta_title: "Managed IAM Services - Aegisoft"
 description: "Comprehensive managed identity and access management services providing ongoing support, monitoring, and optimization of your enterprise IAM infrastructure."
 image: "/images/proof-delivery-workflow.svg"
+faqs:
+  - question: "Can this be delivered in a hybrid model with our internal team?"
+    answer: "Yes. Hybrid delivery is supported with explicit ownership and escalation boundaries."
+  - question: "Do managed services include compliance reporting support?"
+    answer: "Yes. Reporting and evidence workflows can be included in scope."
 draft: false
 ---
 
 Operate IAM as a reliable service with clear SLAs, security oversight, and continuous optimization.
+
+> **TL;DR recommendation:** Use this service when your IAM environment is business-critical and your internal team needs operational reinforcement. The first phase defines support model, service levels, monitoring scope, and transition priorities.
 
 ## Who this is for
 
@@ -49,6 +56,11 @@ Operate IAM as a reliable service with clear SLAs, security oversight, and conti
 - 24/7 monitoring, incident response, and escalation
 - Compliance reporting and audit support
 
+## Relevant platforms and protocols
+
+- Platforms: Okta, Auth0, Entra ID, Keycloak, ForgeRock, Ping Identity
+- Protocols: OAuth/OIDC, SAML, SCIM, MFA and session policy controls
+
 ## Mini proof strip
 
 - 99.99% IAM availability for global operations
@@ -58,4 +70,18 @@ Operate IAM as a reliable service with clear SLAs, security oversight, and conti
 
 ## Next step
 
-[Book a managed IAM operations review](/consultation)
+[Request Managed Services Readiness Assessment](/offers/iam-managed-services-readiness-assessment/)
+
+## FAQ
+
+### Can this service be delivered in a hybrid model with our internal IAM team?
+
+Yes. Hybrid delivery is supported with clear ownership split and escalation paths.
+
+### What response model is available?
+
+Business-hours and follow-the-sun support options are available based on service level.
+
+### Do managed services include security and compliance reporting?
+
+Yes, reporting and evidence workflows can be included in the managed service scope.

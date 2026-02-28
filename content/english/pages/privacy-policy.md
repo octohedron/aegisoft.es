@@ -78,7 +78,7 @@ Depending on your location, you may have rights regarding your personal informat
 - Withdrawal of consent for marketing communications
 - Data portability
 
-To exercise these rights, please contact us at privacy@aegisoft.es.
+To exercise these rights, please contact us at info@aegisoft.es.
 
 ## Cookies and Tracking
 
@@ -96,7 +96,7 @@ Aegisoft may update this Privacy Policy periodically to reflect changes in our p
 
 If you have questions or concerns about our Privacy Policy or data practices, please contact our Data Protection Officer at:
 
-**Email**: privacy@aegisoft.es  
+**Email**: info@aegisoft.es  
 **Address**: Aegisoft Privacy Office, 555 Madison Avenue, 5th Floor, New York, NY 10022
 
 Last Updated: March 1, 2025

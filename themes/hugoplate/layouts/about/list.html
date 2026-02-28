@@ -1,11 +1,86 @@
 {{ define "main" }}
   <section class="section-sm">
     <div class="container">
-      <div class="row justify-center">
-        <div class="md:col-10 lg:col-7 text-center">
-          {{ partial "image" (dict "Src" .Params.image "Context" .Page "Alt" .Title "Class" "mx-auto mb-6" "Size" "200x200") }}
-          <h2 class="h3 mb-6">{{ .Title }}</h2>
-          <div class="content">{{ .Content }}</div>
+      <div class="row items-start gy-8">
+        <div class="lg:col-4">
+          <div class="lg:sticky lg:top-28">
+            <div class="bg-light dark:bg-darkmode-light rounded-lg p-7 mb-6">
+              {{ partial "image" (dict "Src" .Params.image "Context" .Page "Alt" .Title "Class" "mb-5 rounded-full" "Size" "120x120") }}
+              <h1 class="h3 mb-3">{{ .Title }}</h1>
+              <p class="mb-5">{{ .Description }}</p>
+
+              {{ with .Params.proof_points }}
+                <ul>
+                  {{ range . }}
+                    <li class="relative mb-3 pl-6">
+                      <i class="fa fa-check absolute left-0 top-1.5"></i>
+                      {{ . | markdownify }}
+                    </li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            </div>
+
+            {{ with .Params.best_for }}
+              <div class="bg-light dark:bg-darkmode-light rounded-lg p-7 mb-6">
+                <h2 class="h5 mb-4">Best fit</h2>
+                <ul>
+                  {{ range . }}
+                    <li class="relative mb-3 pl-6">
+                      <i class="fa fa-check absolute left-0 top-1.5"></i>
+                      {{ . | markdownify }}
+                    </li>
+                  {{ end }}
+                </ul>
+              </div>
+            {{ end }}
+
+            {{ with .Params.not_best_for }}
+              <div class="bg-light dark:bg-darkmode-light rounded-lg p-7 mb-6">
+                <h2 class="h5 mb-4">Not ideal fit</h2>
+                <ul>
+                  {{ range . }}
+                    <li class="relative mb-3 pl-6">
+                      <i class="fa fa-minus absolute left-0 top-1.5"></i>
+                      {{ . | markdownify }}
+                    </li>
+                  {{ end }}
+                </ul>
+              </div>
+            {{ end }}
+
+            <div class="flex flex-wrap gap-3">
+              {{ with .Params.primary_cta }}
+                <a class="btn btn-primary" href="{{ .link | relLangURL }}">
+                  {{ .label }} <i class="fa fa-arrow-right pl-2"></i>
+                </a>
+              {{ end }}
+              {{ with .Params.secondary_cta }}
+                <a class="btn btn-outline-primary" href="{{ .link | relLangURL }}">
+                  {{ .label }} <i class="fa fa-arrow-right pl-2"></i>
+                </a>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-8">
+          <div class="content">
+            {{ .Content }}
+          </div>
+
+          {{ with .Params.reference_links }}
+            <div class="bg-light dark:bg-darkmode-light rounded-lg p-7 mt-8">
+              <h2 class="h4 mb-4">Verification and references</h2>
+              <ul>
+                {{ range . }}
+                  <li class="mb-2">
+                    <a class="text-primary dark:text-darkmode-primary" href="{{ .link | relLangURL }}">{{ .label }}</a>
+                  </li>
+                {{ end }}
+              </ul>
+            </div>
+          {{ end }}
         </div>
       </div>
     </div>

@@ -28,4 +28,4 @@ This checklist helps engineering and IAM teams de-risk migration programs before
 
 Use the contact form and select **IAM Migration Readiness Review** for an architect-led readiness assessment.
 
-[Request migration readiness review](/contact)
+[Request migration readiness review](/offers/iam-migration-readiness-review/)

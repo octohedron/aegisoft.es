@@ -55,6 +55,7 @@ features:
       - "**High intent:** 30-minute IAM architecture consultation"
       - "**Problem-based:** DORA/GDPR IAM gap checklist and assessment path"
       - "**Technical evaluation:** migration readiness review for Okta/Auth0/Keycloak/Entra"
+      - "**Decision support:** AI-ready buyer guides and partner selection frameworks"
       - "Clear response expectations, engagement scope, and next-step workflow"
       - "Low-friction contact path with qualification fields for faster triage"
     button:
@@ -67,10 +68,12 @@ features:
     content: "Proof assets and company transparency are visible across the site so buyers can evaluate delivery confidence quickly."
     bulletpoints:
       - "Anonymized but specific case studies with measurable outcomes and stack details"
-      - "Named expert profiles with role-specific IAM focus areas"
+      - "Founder-led expert profile with public technical thought leadership"
       - "Thought leadership archive and security/compliance methodology artifacts"
       - "Legal/company transparency via privacy policy and legal notice"
       - "Dedicated pages for DORA/GDPR, migration, and platform-specific buying intent"
+      - "**Best fit:** regulated enterprises with complex IAM architecture decisions"
+      - "**Not best fit:** broad non-IAM transformations needing large multi-domain staffing"
     button:
       enable: true
       label: "Review Trust & Proof Assets"

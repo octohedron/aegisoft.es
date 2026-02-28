@@ -28,4 +28,4 @@ Use this checklist to run a fast first-pass compliance review with your security
 
 If you want an architect-led walkthrough and remediation plan, use the contact form and choose **DORA/GDPR IAM Gap Assessment**.
 
-[Start your gap assessment](/contact)
+[Start your gap assessment](/offers/dora-gdpr-iam-gap-assessment/)
