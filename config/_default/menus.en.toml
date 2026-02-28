@@ -51,7 +51,7 @@ url = "/blog"
 [[main]]
 parent = "Resources"
 name = "Case Studies"
-url = "/blog"
+url = "/case-studies"
 
 [[main]]
 parent = "Resources"
@@ -59,9 +59,19 @@ name = "IAM Experts"
 url = "/authors"
 
 [[main]]
+parent = "Resources"
+name = "Checklists"
+url = "/resources"
+
+[[main]]
 name = "Contact"
 url = "/contact"
 weight = 5
+
+[[main]]
+name = "Consultation"
+url = "/consultation"
+weight = 6
 
 
 # footer menu
@@ -81,11 +91,21 @@ url = "/blog"
 weight = 3
 
 [[footer]]
+name = "Case Studies"
+url = "/case-studies"
+weight = 4
+
+[[footer]]
 name = "Contact"
 url = "/contact"
-weight = 4
+weight = 5
 
 [[footer]]
 name = "Privacy Policy"
 url = "/privacy-policy"
-weight = 5
+weight = 6
+
+[[footer]]
+name = "Legal Notice"
+url = "/legal-notice"
+weight = 7

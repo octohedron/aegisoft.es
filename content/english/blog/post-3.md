@@ -12,6 +12,9 @@ draft: false
 
 Selecting the right Identity and Access Management (IAM) platform is a critical decision for enterprises. Two popular options, Keycloak and Auth0, offer robust capabilities but with different approaches, strengths, and trade-offs. This comprehensive comparison will help enterprise architects and technology leaders make an informed decision based on their specific requirements.
 
+> Planning a platform migration decision?  
+> [Request an IAM migration readiness review](/resources/iam-migration-readiness-checklist)
+
 ## Overview of Platforms
 
 ### Keycloak
@@ -124,6 +127,9 @@ Auth0 is a cloud-based identity platform that provides authentication, authoriza
 
 ## Total Cost of Ownership
 
+Need a second opinion on trade-offs for your environment?  
+[Talk to an IAM architect](/consultation)
+
 ### Licensing Costs
 
 **Keycloak:**
@@ -198,3 +204,6 @@ At Aegisoft, we have extensive experience implementing both Keycloak and Auth0 f
 5. **Knowledge Transfer**: Comprehensive training for your team on managing and extending the solution
 
 Whether you choose Keycloak's flexibility and control or Auth0's convenience and rapid deployment, Aegisoft can ensure your IAM implementation meets your enterprise requirements while providing a secure and seamless user experience.
+
+See an implementation proof example:  
+[Multi-Site Healthcare Provider: Zero-Downtime IAM Rollout](/case-studies/healthcare-okta-zero-downtime-rollout)

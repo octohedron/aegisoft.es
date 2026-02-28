@@ -12,6 +12,9 @@ draft: false
 
 Identity and Access Management (IAM) systems sit at the intersection of data protection and operational resilience, making them critical components for compliance with both the General Data Protection Regulation (GDPR) and the Digital Operational Resilience Act (DORA). This technical guide explores how to architect and configure IAM systems to meet these regulatory requirements while maintaining security and usability.
 
+> Need to assess your IAM design against DORA/GDPR requirements?  
+> [Request a 60-minute compliance architecture review](/consultation)
+
 ## Understanding the Regulatory Landscape
 
 ### GDPR Requirements for IAM
@@ -96,6 +99,9 @@ IDENTITY_ATTRIBUTES = {
 - Use HSMs for storing encryption keys
 
 ### 3. Operational Resilience for IAM
+
+If your team is planning remediation this quarter, start with the practical checklist:  
+[Get the DORA/GDPR IAM gap checklist](/resources/dora-gdpr-iam-gap-checklist)
 
 #### High Availability Architecture
 
@@ -228,3 +234,6 @@ The solution not only achieved compliance but also improved the overall security
 Achieving compliance with both GDPR and DORA requires a thoughtful approach to IAM architecture, implementation, and operations. By addressing data protection, security, resilience, and governance aspects of identity systems, organizations can meet regulatory requirements while delivering secure and seamless authentication experiences.
 
 At Aegisoft, we specialize in designing and implementing compliant IAM solutions that balance regulatory requirements with security and usability. Contact us to learn how we can help your organization navigate the complex landscape of identity compliance.
+
+Related delivery example:  
+[EU Payments Processor: DORA-Aligned IAM Modernization](/case-studies/eu-payments-dora-migration)

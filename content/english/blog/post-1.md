@@ -12,6 +12,9 @@ draft: false
 
 In today's rapidly evolving threat landscape, traditional perimeter-based security models are no longer sufficient. The Zero Trust security model, based on the principle of "never trust, always verify," has emerged as the gold standard for enterprise security architecture. At the core of any successful Zero Trust implementation is a robust Identity and Access Management (IAM) solution.
 
+> Building a Zero Trust roadmap and need architecture validation?  
+> [Book an IAM architecture consultation](/consultation)
+
 ## Understanding Zero Trust Architecture
 
 Zero Trust Architecture (ZTA) is a security concept centered on the belief that organizations should not automatically trust anything inside or outside their perimeters. Instead, they must verify anything and everything trying to connect to their systems before granting access.
@@ -53,6 +56,9 @@ Implementing the principle of least privilege through:
 
 ## Implementation Roadmap
 
+If you are planning migration and control rollout in parallel, use this planning resource:  
+[IAM migration readiness checklist](/resources/iam-migration-readiness-checklist)
+
 Implementing Zero Trust with IAM requires a phased approach:
 
 1. **Assessment Phase**
@@ -76,3 +82,6 @@ Implementing Zero Trust with IAM requires a phased approach:
    - Continuously test and validate security controls
 
 At Aegisoft, we specialize in guiding enterprises through this transformation journey, ensuring your Zero Trust implementation is both robust and user-friendly.
+
+See related service:  
+[IAM Strategy & Architecture](/services/strategy-architecture/)

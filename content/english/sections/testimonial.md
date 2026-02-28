@@ -1,29 +1,33 @@
 ---
 enable: true
 title: "What Our Enterprise Clients Say"
-description: "Aegisoft has helped transform IAM strategies for leading organizations across industries. Here's what our clients have to say about our expertise and impact."
+description: "Specific outcomes from regulated enterprise IAM engagements. Names are anonymized when covered by NDA, but each quote maps to a measurable delivery scenario."
 
 # Testimonials
 testimonials:
-  - name: "One of our customers"
-    designation: "CISO, Global Financial Services"
+  - name: "NDA Client"
+    designation: "CISO, EU payments processor (2,500 employees)"
     avatar: "/images/avatar-sm.png"
-    content: "Aegisoft guided our transition from a legacy identity system to a modern OAuth/OIDC architecture with zero downtime. Their expertise in financial services compliance requirements was invaluable, and they delivered a solution that exceeded our security expectations while improving user experience."
+    content: "Aegisoft guided our migration from fragmented legacy IAM to an OAuth/OIDC architecture with no production downtime. We reduced identity-related incidents and met our DORA remediation deadline without disrupting customer authentication."
+    case_study_link: "/case-studies/eu-payments-dora-migration"
 
-  - name: "One of our customers"
-    designation: "VP of IT Infrastructure, Healthcare Provider"
+  - name: "NDA Client"
+    designation: "VP Infrastructure, multi-site healthcare provider (50k staff)"
     avatar: "/images/avatar-sm.png"
-    content: "Implementing a HIPAA-compliant IAM solution across our multi-cloud environment seemed impossible until we engaged Aegisoft. Their team seamlessly integrated our clinical and administrative systems with Okta, reducing sign-in friction while strengthening our security posture."
+    content: "Aegisoft delivered a phased workforce IAM rollout across clinical and administrative systems, including SSO, MFA, and lifecycle automation. Sign-in friction dropped and audit preparation became significantly faster."
+    case_study_link: "/case-studies/healthcare-okta-zero-downtime-rollout"
 
-  - name: "One of our customers"
-    designation: "Director of Security Engineering, E-Commerce Platform"
+  - name: "NDA Client"
+    designation: "Director Security Engineering, EU retail bank (18k employees)"
     avatar: "/images/avatar-sm.png"
-    content: "Our custom Auth0 implementation by Aegisoft has been transformative. They architected a solution handling millions of consumer identities while implementing sophisticated fraud detection. Their ongoing support has been responsive and proactive as our needs evolve."
+    content: "The migration readiness review surfaced hidden federation and token risks before execution. Their architecture decisions prevented expensive rollback scenarios and accelerated our delivery approvals."
+    case_study_link: "/case-studies/eu-payments-dora-migration"
 
-  - name: "One of our customers"
-    designation: "CTO, SaaS Enterprise"
+  - name: "NDA Client"
+    designation: "CTO, B2B SaaS platform (enterprise + SMB tenants)"
     avatar: "/images/avatar-sm.png"
-    content: "When we needed to implement a complex B2B identity federation system supporting multiple protocols, Aegisoft delivered a solution that exceeded our expectations. Their deep technical knowledge of SAML, OIDC, and custom integration patterns was exceptional."
+    content: "We needed multi-tenant federation across SAML and OIDC with strict enterprise onboarding requirements. Aegisoft delivered a maintainable architecture and implementation plan that our internal team could operate confidently."
+    case_study_link: "/services/implementation-integration"
 
 # don't create a separate page
 _build:

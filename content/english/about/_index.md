@@ -1,37 +1,58 @@
 ---
 title: "About Aegisoft"
 meta_title: "About Aegisoft - Enterprise IAM Consulting"
-description: "Aegisoft delivers premium identity and access management consulting services for enterprises seeking secure, scalable, and compliant IAM solutions."
+description: "Aegisoft is an enterprise IAM consultancy focused on measurable delivery outcomes across strategy, migration, security, and compliance."
 image: "/images/avatar.png"
 draft: false
 ---
 
 ## Your Trusted Partner in Identity & Access Management
 
-Founded by industry veterans with decades of combined experience, Aegisoft has established itself as the premier consulting firm specializing exclusively in enterprise Identity and Access Management solutions. Our elite team of IAM architects, security specialists, and implementation experts brings unparalleled expertise to every engagement.
+Aegisoft focuses exclusively on enterprise Identity and Access Management. We help regulated organizations modernize identity architecture with practical delivery plans, measurable outcomes, and clear governance.
 
 ## Our Approach
 
-At Aegisoft, we understand that effective IAM is the cornerstone of modern enterprise security. Our consultative approach begins with a comprehensive assessment of your current identity infrastructure, security posture, and business requirements. We then architect tailored solutions that balance robust security with seamless user experiences, ensuring your organization can operate with confidence in an increasingly complex threat landscape.
+Our work starts with context, constraints, and risk. We assess your current IAM estate, define a target-state architecture, and execute phased delivery with explicit rollback and operating models.
+
+## Proof and delivery evidence
+
+- Case studies include client profile, constraints, architecture choices, timeline, and measured outcomes
+- Typical outcomes include incident reduction, faster onboarding, and improved audit readiness
+- Delivery artifacts include architecture diagrams, control mappings, and implementation runbooks
+- See examples in our [Case Studies](/case-studies/) section
 
 ## Technical Excellence
 
-Our consultants maintain certifications across all major IAM platforms including Okta, Auth0, Microsoft Entra ID (formerly Azure AD), ForgeRock, Ping Identity, and Keycloak. We pride ourselves on our deep protocol expertise, from OAuth 2.0 and OpenID Connect to SAML, SCIM, and emerging standards like FIDO2.
+Our consultants work across major IAM platforms including Okta, Auth0, Microsoft Entra ID, and Keycloak, with deep protocol expertise in OAuth 2.1, OpenID Connect, SAML, SCIM, and WebAuthn.
 
 ## Enterprise Focus
 
-We exclusively serve medium to large enterprises across financial services, healthcare, government, technology, and manufacturing sectors. Our solutions scale to support millions of identities while meeting the most stringent compliance requirements including GDPR, HIPAA, PCI-DSS, SOC2, and industry-specific regulations.
+We serve medium to large organizations across financial services, healthcare, public sector, and SaaS. Engagements are designed to support enterprise scale and regulatory expectations including GDPR, DORA, HIPAA, and SOC-related controls.
 
 ## Global Reach
 
-With consultants based across North America, Europe, and Asia-Pacific regions, Aegisoft delivers consistent, high-quality services to multinational organizations. Our follow-the-sun support model ensures your critical identity systems receive attention whenever needed.
+With consultants across North America and Europe, Aegisoft supports distributed teams and cross-region IAM programs through coordinated advisory and implementation delivery.
+
+## Experts and thought leadership
+
+- Meet our team on the [IAM Experts](/authors/) page
+- Explore implementation and protocol deep dives in the [Blog](/blog/)
+- Browse [Talks and Publications](/talks-publications/)
+- Review our [Security and Compliance Methodology](/security-compliance-methodology/)
+- Request topic-specific architecture reviews through the [Consultation](/consultation/) hub
+
+## Legal and company transparency
+
+- **Legal name:** Aegisoft Consulting S.L.
+- **Registered jurisdiction:** Spain
+- **Legal details and disclosures:** [Legal Notice](/legal-notice/)
+- **Privacy and data handling:** [Privacy Policy](/privacy-policy/)
 
 ## Why Choose Aegisoft
 
-* **Specialized Expertise**: Unlike general cybersecurity firms, we focus exclusively on identity and access management.
-* **Vendor Independence**: We recommend solutions based on your needs, not vendor relationships.
-* **Implementation Excellence**: Our proven methodology ensures successful deployments with minimal disruption.
-* **Knowledge Transfer**: We empower your team with the skills to maintain and evolve your IAM infrastructure.
-* **Long-term Partnership**: We build lasting relationships, serving as trusted advisors throughout your IAM journey.
+- **IAM specialization:** focused identity expertise, not generic security consulting
+- **Evidence-first delivery:** specific architecture decisions and measurable outcomes
+- **Vendor-aware, requirement-led guidance:** recommendations tied to your constraints
+- **Execution capability:** strategy through implementation and managed operations
 
-Contact Aegisoft today to transform your organization's approach to identity and access management.
+[Talk to an IAM architect](/consultation)

@@ -4,6 +4,11 @@ meta_title: "Aegisoft IAM Experts and Thought Leaders"
 description: "Meet the industry-leading identity and access management experts at Aegisoft who help enterprises secure and optimize their IAM infrastructure."
 ---
 
-Aegisoft brings together the industry's most experienced identity and access management professionals. Our team of IAM experts combines deep technical knowledge with strategic business acumen to deliver exceptional results for our enterprise clients.
+Aegisoft experts combine architecture, engineering, and compliance experience to deliver outcome-focused IAM programs for regulated enterprises.
 
-Our consultants hold certifications across all major IAM platforms and maintain active involvement in industry standards bodies, ensuring we remain at the forefront of identity security innovation.
+Representative expertise across the team includes:
+
+- Okta, Auth0, Keycloak, and Microsoft Entra architecture and implementation
+- OAuth 2.1, OIDC, SAML, SCIM, and passwordless authentication patterns
+- DORA/GDPR IAM control mapping and audit-readiness workflows
+- Migration execution for large, mixed legacy/cloud application portfolios

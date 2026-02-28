@@ -11,18 +11,43 @@
             <p class="mb-8">
               {{ .content | markdownify }}
             </p>
-            {{ with .button }}
-              {{ if .enable }}
-                <a
-                  class="btn btn-primary"
-                  href="{{ .link | absURL }}"
-                  {{ if strings.HasPrefix .link `http` }}
-                    target="_blank" rel="noopener"
-                  {{ end }}>
-                  {{ .label }}
-                  <i class="fa fa-arrow-right pl-2"></i>
-                </a>
+            <div class="flex flex-wrap justify-center gap-3">
+              {{ with .button }}
+                {{ if .enable }}
+                  <a
+                    class="btn btn-primary"
+                    href="{{ .link | absURL }}"
+                    {{ if strings.HasPrefix .link `http` }}
+                      target="_blank" rel="noopener"
+                    {{ end }}>
+                    {{ .label }}
+                    <i class="fa fa-arrow-right pl-2"></i>
+                  </a>
+                {{ end }}
               {{ end }}
+              {{ with .secondary_button }}
+                {{ if .enable }}
+                  <a
+                    class="btn btn-outline-primary"
+                    href="{{ .link | absURL }}"
+                    {{ if strings.HasPrefix .link `http` }}
+                      target="_blank" rel="noopener"
+                    {{ end }}>
+                    {{ .label }}
+                    <i class="fa fa-arrow-right pl-2"></i>
+                  </a>
+                {{ end }}
+              {{ end }}
+            </div>
+            {{ with .proof_points }}
+              <ul class="mt-8 text-left lg:mx-auto lg:max-w-[640px]">
+                {{ range . }}
+                  <li class="relative mb-3 pl-6">
+                    <i class="fa fa-check absolute left-0 top-1.5"></i>
+                    {{ . | markdownify }}
+                  </li>
+                {{ end }}
+              </ul>
             {{ end }}
           </div>
           <div class="col-12">
@@ -125,6 +150,13 @@
                             <p class="text-text-dark dark:text-white">
                               {{ .designation | markdownify }}
                             </p>
+                            {{ with .case_study_link }}
+                              <p class="mt-1">
+                                <a class="text-primary dark:text-darkmode-primary text-sm" href="{{ . | relLangURL }}">
+                                  View case study <i class="fa fa-arrow-right pl-1"></i>
+                                </a>
+                              </p>
+                            {{ end }}
                           </div>
                         </div>
                       </div>

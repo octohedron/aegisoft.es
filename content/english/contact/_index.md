@@ -1,39 +1,27 @@
 ---
 title: "Contact Aegisoft"
 meta_title: "Contact Aegisoft - Enterprise IAM Consulting"
-description: "Get in touch with Aegisoft for expert identity and access management consulting services. Schedule a consultation with our IAM specialists today."
+description: "Contact Aegisoft for IAM architecture consultations, migration readiness reviews, and compliance-focused assessments."
 draft: false
 ---
 
-## Schedule a Consultation
+## Talk to an IAM Architect
 
-Our team of IAM experts is ready to discuss your enterprise identity challenges and provide tailored solutions. Complete the form below to schedule a complimentary initial consultation.
+Use the form to choose your engagement path and share context. We reply within **1 business day**.
 
-## Enterprise Support
+## What to expect
 
-For existing clients requiring immediate assistance, please contact our dedicated support team:
+1. An IAM architect reviews your request.
+2. We send a fit/next-step recommendation.
+3. If relevant, we schedule a short triage call and define scope.
 
-- **Email**: support@aegisoft.es
-- **Phone**: +1 (888) IAM-PROS
-- **Hours**: 24/7 Follow-the-sun Support
+## Alternative contact methods
 
-## Global Offices
+- **Architecture consultations:** consultation@aegisoft.es
+- **Support:** support@aegisoft.es
+- **Partnerships:** partners@aegisoft.es
 
-### North America
-- **New York**: 555 Madison Avenue, 5th Floor, New York, NY 10022
-- **San Francisco**: 101 California Street, Suite 2300, San Francisco, CA 94111
-- **Toronto**: 40 King Street West, 41st Floor, Toronto, ON M5H 3Y2
+## Privacy
 
-### Europe
-- **London**: 30 St Mary Axe, London EC3A 8BF, United Kingdom
-- **Frankfurt**: Taunusanlage 8, 60329 Frankfurt am Main, Germany
-- **Amsterdam**: Gustav Mahlerlaan 2970, 1081 LA Amsterdam, Netherlands
+Your details are used only to respond to your request and scope potential engagement. See our [Privacy Policy](/privacy-policy/) and [Legal Notice](/legal-notice/).
 
-### Asia-Pacific
-- **Singapore**: 1 Raffles Quay, #20-01, Singapore 048583
-- **Sydney**: 1 O'Connell Street, Sydney NSW 2000, Australia
-- **Tokyo**: Marunouchi Building 33F, 2-4-1 Marunouchi, Chiyoda-ku, Tokyo 100-6333, Japan
-
-## Partner Inquiries
-
-Interested in partnering with Aegisoft? Please contact our partnership team at partners@aegisoft.es.

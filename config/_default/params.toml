@@ -27,7 +27,7 @@ google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
 custom_script = ""
 # copyright
-copyright = "© Aegisoft - Enterprise IAM Consulting"
+copyright = "© Aegisoft Consulting S.L. - Enterprise IAM Consulting"
 
 # Preloader
 # preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader
@@ -38,8 +38,8 @@ preloader = "" # use jpg, png, svg or gif format.
 # Navigation button
 [navigation_button]
 enable = true
-label = "Request a Consultation"
-link = "contact"
+label = "Book Architecture Review"
+link = "consultation"
 
 # search
 # search module: https://github.com/gethugothemes/hugo-modules/tree/master/search
@@ -63,7 +63,7 @@ content = "You must replace the **baseURL** in **hugo.toml** file when deploying
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
 keywords = ["IAM", "Identity and Access Management", "Authentication", "Authorization", "OAuth", "OIDC", "SAML", "Okta", "Auth0", "Keycloak", "Enterprise Security"]
-description = "Aegisoft - Premier IAM Consulting Services for Enterprise Identity & Access Management Solutions"
+description = "Aegisoft helps regulated enterprises modernize IAM with measurable outcomes across migration, compliance, and secure access architecture."
 author = "Aegisoft"
 twitter = "aegisoft"
 image = "images/og-image.png"

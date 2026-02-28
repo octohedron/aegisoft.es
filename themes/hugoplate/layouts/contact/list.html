@@ -5,7 +5,33 @@
 <section class="section-sm">
   <div class="container">
     <div class="row">
-      <div class="md:col-10 lg:col-6 mx-auto">
+      <div class="lg:col-5 mb-10 lg:mb-0">
+        <div class="content mb-8">
+          {{ .Content }}
+        </div>
+        <div class="bg-light dark:bg-darkmode-light rounded-lg p-6">
+          <h2 class="h5 mb-4">Fast, low-friction intake</h2>
+          <ul>
+            <li class="relative mb-3 pl-6">
+              <i class="fa fa-check absolute left-0 top-1.5"></i>
+              Response in <strong>1 business day</strong>
+            </li>
+            <li class="relative mb-3 pl-6">
+              <i class="fa fa-check absolute left-0 top-1.5"></i>
+              Reviewed by an <strong>IAM architect</strong>, not a generic sales queue
+            </li>
+            <li class="relative mb-3 pl-6">
+              <i class="fa fa-check absolute left-0 top-1.5"></i>
+              Clear next steps: triage call, scope, and proposal path
+            </li>
+          </ul>
+          <a class="btn btn-outline-primary mt-3 w-full text-center" href="{{ "/consultation" | relLangURL }}">
+            Book a 30-minute architecture review
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:col-7">
         <!-- Popup notification -->
         <div id="popup" class="fixed top-4 right-4 bg-white shadow-lg rounded-lg p-4 z-50 hidden">
           <p id="popupMessage" class="text-green-500"></p>
@@ -45,10 +71,41 @@
             <input id="company" name="company" class="form-input" placeholder="Your Company" type="text" />
           </div>
           <div class="mb-6">
+            <label for="engagement_type" class="form-label">
+              Engagement Type <span class="text-red-500">*</span>
+            </label>
+            <select id="engagement_type" name="engagement_type" class="form-input">
+              <option value="">Select one</option>
+              <option value="architecture_consultation">IAM architecture consultation (30 min)</option>
+              <option value="dora_gdpr_assessment">DORA/GDPR IAM gap assessment</option>
+              <option value="migration_readiness">IAM migration readiness review</option>
+              <option value="managed_services">Managed IAM services review</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="mb-6">
             <label for="subject" class="form-label">
               Subject <span class="text-red-500">*</span>
             </label>
             <input id="subject" name="subject" class="form-input" placeholder="Consultation Request" type="text" />
+          </div>
+          <div class="mb-6">
+            <label for="timeline" class="form-label">
+              Project Timeline
+            </label>
+            <select id="timeline" name="timeline" class="form-input">
+              <option value="">Select timeline</option>
+              <option value="0-30_days">0-30 days</option>
+              <option value="30-90_days">30-90 days</option>
+              <option value="3-6_months">3-6 months</option>
+              <option value="6+_months">6+ months</option>
+            </select>
+          </div>
+          <div class="mb-6">
+            <label for="preferred_meeting_date" class="form-label">
+              Preferred Meeting Date
+            </label>
+            <input id="preferred_meeting_date" name="preferred_meeting_date" class="form-input" type="date" />
           </div>
           <div class="mb-6">
             <label for="message" class="form-label">
@@ -57,7 +114,16 @@
             <textarea id="message" name="message" class="form-input" placeholder="Message goes here..."
               rows="8"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="mb-6">
+            <label class="flex items-start">
+              <input id="privacy_consent" name="privacy_consent" type="checkbox" class="mt-1 mr-3" />
+              <span>I consent to Aegisoft processing my data to respond to this request. See the <a class="text-primary" href="{{ "/privacy-policy/" | relLangURL }}">Privacy Policy</a>.</span>
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit Request</button>
+          <p class="mt-3 text-sm text-text-light dark:text-darkmode-text-light">
+            Prefer email? Reach us at <a class="text-primary" href="mailto:consultation@aegisoft.es">consultation@aegisoft.es</a>.
+          </p>
         </form>
       </div>
     </div>
@@ -142,11 +208,12 @@
     event.preventDefault();
 
     // Validate required fields
-    const requiredFields = ['first_name', 'last_name', 'email', 'subject', 'message'];
+    const requiredFields = ['first_name', 'last_name', 'email', 'engagement_type', 'subject', 'message'];
     let isValid = true;
     requiredFields.forEach(function (field) {
       const input = document.getElementsByName(field)[0];
-      if (!input.value) {
+      const isCheckbox = input.type === 'checkbox';
+      if ((isCheckbox && !input.checked) || (!isCheckbox && !input.value)) {
         isValid = false;
         input.classList.add('border-red-500');
         const errorText = document.createElement('span');
@@ -165,6 +232,12 @@
 
     if (!isValid) {
       showPopup('Please fill out all required fields.', false);
+      return;
+    }
+
+    const consentInput = document.getElementsByName('privacy_consent')[0];
+    if (!consentInput.checked) {
+      showPopup('Please provide privacy consent before submitting.', false);
       return;
     }
 

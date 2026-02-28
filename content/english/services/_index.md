@@ -2,47 +2,37 @@
 title: "Our IAM Services"
 meta_title: "Enterprise IAM Services - Aegisoft"
 description: "Aegisoft delivers comprehensive identity and access management services for enterprise organizations, from strategy to implementation and managed services."
-image: "/images/banner.png"
+image: "/images/proof-iam-architecture.svg"
 draft: false
 ---
 
-# Enterprise Identity & Access Management Services
+Aegisoft delivers IAM services across strategy, implementation, security/compliance, and managed operations. Every engagement is scoped around outcomes, constraints, and measurable delivery milestones.
 
-Aegisoft provides end-to-end IAM services designed to secure, optimize, and transform your organization's identity infrastructure. Our comprehensive service portfolio addresses the full lifecycle of identity management, from strategic planning to implementation, security hardening, and ongoing operations.
+## Who this is for
 
-## Why Choose Aegisoft for Your IAM Needs?
+- CTO, CISO, IAM lead, and enterprise architecture teams
+- Regulated organizations modernizing identity infrastructure
+- Programs needing low-risk migration and audit-ready controls
 
-- **Specialized Expertise**: Our consultants focus exclusively on identity and access management
-- **Vendor Independence**: Unbiased recommendations based on your specific requirements
-- **Enterprise Scale**: Solutions designed for complex, large-scale environments
-- **Proven Methodology**: Structured approach ensuring successful outcomes
-- **Global Reach**: Support for multinational deployments with follow-the-sun service
+## Service categories
 
-## Our Service Categories
+- [IAM Strategy & Architecture](/services/strategy-architecture/)  
+  Define target-state architecture and an execution roadmap.
+- [Implementation & Integration](/services/implementation-integration/)  
+  Deliver platform rollout and integration programs with controlled risk.
+- [Security & Compliance](/services/security-compliance/)  
+  Improve IAM security posture and compliance evidence quality.
+- [Managed IAM Services](/services/managed-services/)  
+  Run IAM as a reliable, monitored, and continuously optimized service.
 
-Explore our specialized service offerings:
+## Conversion paths
 
-### [IAM Strategy & Architecture](/services/strategy-architecture/)
-Develop a comprehensive identity roadmap aligned with your business objectives and security requirements.
+- [Book a 30-minute IAM architecture review](/consultation)
+- [Get a DORA/GDPR IAM gap checklist](/resources/dora-gdpr-iam-gap-checklist)
+- [Request an IAM migration readiness review](/resources/iam-migration-readiness-checklist)
 
-### [Implementation & Integration](/services/implementation-integration/)
-Expert deployment and integration of IAM solutions across your technology ecosystem.
+## Industry-specific strategy pages
 
-### [Security & Compliance](/services/security-compliance/)
-Ensure your identity infrastructure meets the highest security standards and regulatory requirements.
-
-### [Managed IAM Services](/services/managed-services/)
-Ongoing support, monitoring, and optimization of your identity systems.
-
-## Industries We Serve
-
-Aegisoft has deep experience delivering IAM solutions across diverse industries:
-
-- **Financial Services**: Banks, insurance companies, and investment firms
-- **Healthcare**: Providers, payers, and life sciences organizations
-- **Government**: Federal, state, and local agencies
-- **Technology**: SaaS providers, technology platforms, and digital services
-- **Manufacturing**: Industrial, consumer goods, and supply chain
-- **Retail**: E-commerce, omnichannel, and traditional retail
-
-Contact us today to discuss how our IAM services can transform your organization's approach to identity and access management.
+- [Financial services IAM strategy consulting](/iam-strategy-consulting-financial-services/)
+- [Healthcare IAM strategy consulting](/iam-strategy-consulting-healthcare/)
+- [SaaS IAM strategy consulting](/iam-strategy-consulting-saas/)
