@@ -51,7 +51,33 @@
             {{ end }}
           </div>
           <div class="col-12">
-            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]" "DisplayXL" "800x" ) }}
+            {{ if eq .visual_type "architecture-html" }}
+              <div class="mx-auto lg:!max-w-[980px] rounded-2xl border p-6 md:p-8 text-white" style="background:#1b1b1b;border-color:#3a3a3a;">
+                <div class="mb-6 text-left">
+                  <p class="text-sm uppercase tracking-[0.18em] text-white/70">Reference IAM architecture</p>
+                  <h2 class="h3 mt-2 text-white">Identity Core -> Control Layers -> Audit Evidence</h2>
+                </div>
+                <div class="grid gap-4 md:grid-cols-3">
+                  <div class="rounded-xl border p-5" style="background:#252525;border-color:#4a4a4a;">
+                    <p class="text-xs uppercase tracking-[0.14em] text-white/70">Identity Core</p>
+                    <p class="h5 mt-2 text-white">Okta / Auth0 / Entra / Keycloak</p>
+                    <p class="mt-2 text-sm text-white/80">Centralized policy and federation baseline.</p>
+                  </div>
+                  <div class="rounded-xl border p-5" style="background:#252525;border-color:#4a4a4a;">
+                    <p class="text-xs uppercase tracking-[0.14em] text-white/70">Control Layer</p>
+                    <p class="h5 mt-2 text-white">SSO + MFA + Lifecycle + Governance</p>
+                    <p class="mt-2 text-sm text-white/80">Risk-based authentication and access controls.</p>
+                  </div>
+                  <div class="rounded-xl border p-5" style="background:#252525;border-color:#4a4a4a;">
+                    <p class="text-xs uppercase tracking-[0.14em] text-white/70">Evidence Layer</p>
+                    <p class="h5 mt-2 text-white">DORA / GDPR audit readiness</p>
+                    <p class="mt-2 text-sm text-white/80">Operational logging, reviews, and traceability.</p>
+                  </div>
+                </div>
+              </div>
+            {{ else }}
+              {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]" "DisplayXL" "800x" ) }}
+            {{ end }}
           </div>
         </div>
       </div>
@@ -68,7 +94,76 @@
             class="mb:md-0 {{ if not (modBool $i 2) }}
               md:order-2
             {{ end }} md:col-5 mb-6">
-            {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
+            {{ if eq .visual_type "workflow-html" }}
+              <div class="rounded-xl border text-white p-5" style="background:#1b1b1b;border-color:#3a3a3a;">
+                <p class="text-xs uppercase tracking-[0.14em] text-white/70 mb-4">Delivery workflow</p>
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="rounded-lg border p-3 text-center font-semibold" style="background:#252525;border-color:#4a4a4a;">Assess</div>
+                  <div class="rounded-lg border p-3 text-center font-semibold" style="background:#252525;border-color:#4a4a4a;">Design</div>
+                  <div class="rounded-lg border p-3 text-center font-semibold" style="background:#252525;border-color:#4a4a4a;">Implement</div>
+                  <div class="rounded-lg border p-3 text-center font-semibold" style="background:#252525;border-color:#4a4a4a;">Validate</div>
+                </div>
+                <div class="mt-3 rounded-lg border p-3 text-center font-semibold" style="background:#252525;border-color:#4a4a4a;">Operate</div>
+              </div>
+            {{ else if eq .visual_type "before-after-html" }}
+              <div class="rounded-xl border text-white p-5" style="background:#1b1b1b;border-color:#3a3a3a;">
+                <div class="grid gap-3 md:grid-cols-2">
+                  <div class="rounded-lg border p-4" style="background:#252525;border-color:#4a4a4a;">
+                    <p class="text-xs uppercase tracking-[0.14em] text-white/70">Before</p>
+                    <ul class="mt-2 text-sm space-y-1">
+                      <li>- Legacy IdP A / IdP B</li>
+                      <li>- Manual access workflows</li>
+                      <li>- Siloed MFA patterns</li>
+                      <li>- Limited audit logs</li>
+                    </ul>
+                  </div>
+                  <div class="rounded-lg border p-4" style="background:#252525;border-color:#4a4a4a;">
+                    <p class="text-xs uppercase tracking-[0.14em] text-white/70">After</p>
+                    <ul class="mt-2 text-sm space-y-1">
+                      <li>- Unified IAM core</li>
+                      <li>- Automated controls</li>
+                      <li>- Consistent policy enforcement</li>
+                      <li>- Audit-ready evidence flow</li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="mt-3 text-center text-sm font-semibold text-white/90">Fewer incidents - Faster onboarding - Better audits</p>
+              </div>
+            {{ else if eq .visual_type "compliance-html" }}
+              <div class="rounded-xl border text-white p-5" style="background:#1b1b1b;border-color:#3a3a3a;">
+                <p class="text-xs uppercase tracking-[0.14em] text-white/70 mb-3">Compliance mapping</p>
+                <div class="grid gap-2 text-sm">
+                  <div class="grid grid-cols-3 gap-2">
+                    <div class="rounded border p-2 font-semibold text-center" style="background:#252525;border-color:#4a4a4a;">DORA</div>
+                    <div class="rounded border p-2 text-center" style="background:#252525;border-color:#4a4a4a;">MFA policy</div>
+                    <div class="rounded border p-2 text-center" style="background:#252525;border-color:#4a4a4a;">Control tests</div>
+                  </div>
+                  <div class="grid grid-cols-3 gap-2">
+                    <div class="rounded border p-2 font-semibold text-center" style="background:#252525;border-color:#4a4a4a;">GDPR</div>
+                    <div class="rounded border p-2 text-center" style="background:#252525;border-color:#4a4a4a;">Access reviews</div>
+                    <div class="rounded border p-2 text-center" style="background:#252525;border-color:#4a4a4a;">Evidence packs</div>
+                  </div>
+                  <div class="grid grid-cols-3 gap-2">
+                    <div class="rounded border p-2 font-semibold text-center" style="background:#252525;border-color:#4a4a4a;">SOC2/ISO</div>
+                    <div class="rounded border p-2 text-center" style="background:#252525;border-color:#4a4a4a;">Monitoring</div>
+                    <div class="rounded border p-2 text-center" style="background:#252525;border-color:#4a4a4a;">Audit logs</div>
+                  </div>
+                </div>
+              </div>
+            {{ else if eq .visual_type "architecture-mini-html" }}
+              <div class="rounded-xl border text-white p-5" style="background:#1b1b1b;border-color:#3a3a3a;">
+                <p class="text-xs uppercase tracking-[0.14em] text-white/70 mb-3">Architecture proof visual</p>
+                <div class="grid gap-2">
+                  <div class="rounded border p-3 text-center font-semibold" style="background:#252525;border-color:#4a4a4a;">Identity Core</div>
+                  <div class="rounded border p-3 text-center" style="background:#252525;border-color:#4a4a4a;">Policy + Federation + MFA</div>
+                  <div class="rounded border p-3 text-center" style="background:#252525;border-color:#4a4a4a;">Lifecycle + Governance</div>
+                  <div class="rounded border p-3 text-center" style="background:#252525;border-color:#4a4a4a;">Audit Evidence + Reporting</div>
+                </div>
+                <div class="mt-3 text-center text-sm text-white/80">Same architecture logic, rendered as native HTML/CSS</div>
+              </div>
+            {{ else }}
+              {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
+            {{ end }}
           </div>
           <div
             class="{{ if not (modBool $i 2) }}

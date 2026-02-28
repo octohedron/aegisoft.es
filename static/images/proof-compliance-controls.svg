@@ -1,32 +1,51 @@
 <svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Compliance control mapping visual</title>
-  <desc id="desc">Shows mapping from regulatory controls to IAM technical controls and evidence outputs.</desc>
-  <rect width="1200" height="700" fill="#0f172a"/>
-  <text x="80" y="80" fill="#f8fafc" font-size="34" font-family="Arial">Compliance to IAM Control Mapping</text>
-  <rect x="90" y="140" width="300" height="460" rx="14" fill="#111827" stroke="#334155" stroke-width="2"/>
-  <rect x="450" y="140" width="300" height="460" rx="14" fill="#111827" stroke="#334155" stroke-width="2"/>
-  <rect x="810" y="140" width="300" height="460" rx="14" fill="#111827" stroke="#334155" stroke-width="2"/>
-  <text x="130" y="190" fill="#93c5fd" font-size="24" font-family="Arial">Regulations</text>
-  <text x="490" y="190" fill="#6ee7b7" font-size="24" font-family="Arial">IAM Controls</text>
-  <text x="850" y="190" fill="#fcd34d" font-size="24" font-family="Arial">Evidence</text>
-  <text x="130" y="250" fill="#e2e8f0" font-size="20" font-family="Arial">DORA</text>
-  <text x="130" y="290" fill="#e2e8f0" font-size="20" font-family="Arial">GDPR</text>
-  <text x="130" y="330" fill="#e2e8f0" font-size="20" font-family="Arial">SOC 2</text>
-  <text x="130" y="370" fill="#e2e8f0" font-size="20" font-family="Arial">ISO 27001</text>
-  <text x="490" y="250" fill="#e2e8f0" font-size="20" font-family="Arial">MFA + policy enforcement</text>
-  <text x="490" y="290" fill="#e2e8f0" font-size="20" font-family="Arial">Access reviews + JML</text>
-  <text x="490" y="330" fill="#e2e8f0" font-size="20" font-family="Arial">Federation hardening</text>
-  <text x="490" y="370" fill="#e2e8f0" font-size="20" font-family="Arial">Logging + monitoring</text>
-  <text x="850" y="250" fill="#e2e8f0" font-size="20" font-family="Arial">Control test results</text>
-  <text x="850" y="290" fill="#e2e8f0" font-size="20" font-family="Arial">Review completion records</text>
-  <text x="850" y="330" fill="#e2e8f0" font-size="20" font-family="Arial">Policy and exception logs</text>
-  <text x="850" y="370" fill="#e2e8f0" font-size="20" font-family="Arial">Audit-ready reporting packs</text>
-  <line x1="390" y1="245" x2="450" y2="245" stroke="#94a3b8" stroke-width="3"/>
-  <line x1="390" y1="285" x2="450" y2="285" stroke="#94a3b8" stroke-width="3"/>
-  <line x1="390" y1="325" x2="450" y2="325" stroke="#94a3b8" stroke-width="3"/>
-  <line x1="390" y1="365" x2="450" y2="365" stroke="#94a3b8" stroke-width="3"/>
-  <line x1="750" y1="245" x2="810" y2="245" stroke="#94a3b8" stroke-width="3"/>
-  <line x1="750" y1="285" x2="810" y2="285" stroke="#94a3b8" stroke-width="3"/>
-  <line x1="750" y1="325" x2="810" y2="325" stroke="#94a3b8" stroke-width="3"/>
-  <line x1="750" y1="365" x2="810" y2="365" stroke="#94a3b8" stroke-width="3"/>
+  <desc id="desc">Monochrome mapping from regulations to IAM controls and evidence outputs.</desc>
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101010"/>
+      <stop offset="100%" stop-color="#1f1f1f"/>
+    </linearGradient>
+    <linearGradient id="col4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#232323"/>
+      <stop offset="100%" stop-color="#2d2d2d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg4)"/>
+  <text x="78" y="90" fill="#ffffff" font-size="44" font-family="Inter, Arial, sans-serif" font-weight="800">Compliance to IAM Control Mapping</text>
+  <text x="78" y="124" fill="#d3d3d3" font-size="22" font-family="Inter, Arial, sans-serif">Turn regulatory obligations into technical controls and evidence</text>
+
+  <rect x="88" y="152" width="304" height="476" rx="18" fill="url(#col4)" stroke="#ffffff" stroke-opacity="0.27"/>
+  <rect x="448" y="152" width="304" height="476" rx="18" fill="url(#col4)" stroke="#ffffff" stroke-opacity="0.27"/>
+  <rect x="808" y="152" width="304" height="476" rx="18" fill="url(#col4)" stroke="#ffffff" stroke-opacity="0.27"/>
+
+  <text x="126" y="208" fill="#ffffff" font-size="30" font-family="Inter, Arial, sans-serif" font-weight="700">Regulations</text>
+  <text x="486" y="208" fill="#ffffff" font-size="30" font-family="Inter, Arial, sans-serif" font-weight="700">IAM Controls</text>
+  <text x="846" y="208" fill="#ffffff" font-size="30" font-family="Inter, Arial, sans-serif" font-weight="700">Evidence</text>
+
+  <text x="126" y="272" fill="#e5e5e5" font-size="24" font-family="Inter, Arial, sans-serif">DORA</text>
+  <text x="126" y="316" fill="#e5e5e5" font-size="24" font-family="Inter, Arial, sans-serif">GDPR</text>
+  <text x="126" y="360" fill="#e5e5e5" font-size="24" font-family="Inter, Arial, sans-serif">SOC 2</text>
+  <text x="126" y="404" fill="#e5e5e5" font-size="24" font-family="Inter, Arial, sans-serif">ISO 27001</text>
+
+  <text x="486" y="272" fill="#e5e5e5" font-size="24" font-family="Inter, Arial, sans-serif">MFA policy enforcement</text>
+  <text x="486" y="316" fill="#e5e5e5" font-size="24" font-family="Inter, Arial, sans-serif">Access reviews + JML</text>
+  <text x="486" y="360" fill="#e5e5e5" font-size="24" font-family="Inter, Arial, sans-serif">Federation hardening</text>
+  <text x="486" y="404" fill="#e5e5e5" font-size="24" font-family="Inter, Arial, sans-serif">Logging and monitoring</text>
+
+  <text x="846" y="272" fill="#e5e5e5" font-size="24" font-family="Inter, Arial, sans-serif">Control test results</text>
+  <text x="846" y="316" fill="#e5e5e5" font-size="24" font-family="Inter, Arial, sans-serif">Review completion records</text>
+  <text x="846" y="360" fill="#e5e5e5" font-size="24" font-family="Inter, Arial, sans-serif">Policy + exception logs</text>
+  <text x="846" y="404" fill="#e5e5e5" font-size="24" font-family="Inter, Arial, sans-serif">Audit-ready reporting packs</text>
+
+  <g stroke="#ffffff" stroke-opacity="0.35" stroke-width="3">
+    <path d="M392 264 L448 264"/>
+    <path d="M392 308 L448 308"/>
+    <path d="M392 352 L448 352"/>
+    <path d="M392 396 L448 396"/>
+    <path d="M752 264 L808 264"/>
+    <path d="M752 308 L808 308"/>
+    <path d="M752 352 L808 352"/>
+    <path d="M752 396 L808 396"/>
+  </g>
 </svg>

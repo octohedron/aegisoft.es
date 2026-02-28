@@ -1,28 +1,92 @@
 <svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">IAM target architecture overview</title>
-  <desc id="desc">A simplified IAM architecture diagram with identity provider, applications, and monitoring controls.</desc>
-  <rect width="1200" height="700" fill="#0f172a"/>
-  <rect x="70" y="70" width="1060" height="560" rx="20" fill="#111827" stroke="#334155" stroke-width="2"/>
-  <rect x="140" y="170" width="260" height="140" rx="12" fill="#1d4ed8"/>
-  <text x="170" y="225" fill="#ffffff" font-size="28" font-family="Arial">Identity Provider</text>
-  <text x="170" y="265" fill="#bfdbfe" font-size="20" font-family="Arial">Okta / Auth0 / Entra</text>
-  <rect x="470" y="120" width="260" height="120" rx="12" fill="#0ea5e9"/>
-  <text x="510" y="190" fill="#ffffff" font-size="24" font-family="Arial">SSO + MFA</text>
-  <rect x="470" y="300" width="260" height="120" rx="12" fill="#14b8a6"/>
-  <text x="520" y="370" fill="#ffffff" font-size="24" font-family="Arial">Lifecycle</text>
-  <rect x="470" y="480" width="260" height="120" rx="12" fill="#22c55e"/>
-  <text x="500" y="550" fill="#ffffff" font-size="24" font-family="Arial">Access Governance</text>
-  <rect x="810" y="170" width="260" height="140" rx="12" fill="#7c3aed"/>
-  <text x="860" y="225" fill="#ffffff" font-size="28" font-family="Arial">Applications</text>
-  <text x="855" y="265" fill="#ddd6fe" font-size="20" font-family="Arial">SaaS / APIs / Legacy</text>
-  <rect x="810" y="410" width="260" height="140" rx="12" fill="#f59e0b"/>
-  <text x="835" y="465" fill="#111827" font-size="24" font-family="Arial">Audit + Monitoring</text>
-  <text x="845" y="505" fill="#111827" font-size="20" font-family="Arial">DORA / GDPR evidence</text>
-  <line x1="400" y1="240" x2="470" y2="180" stroke="#e2e8f0" stroke-width="4"/>
-  <line x1="400" y1="240" x2="470" y2="360" stroke="#e2e8f0" stroke-width="4"/>
-  <line x1="400" y1="240" x2="470" y2="540" stroke="#e2e8f0" stroke-width="4"/>
-  <line x1="730" y1="180" x2="810" y2="240" stroke="#e2e8f0" stroke-width="4"/>
-  <line x1="730" y1="360" x2="810" y2="240" stroke="#e2e8f0" stroke-width="4"/>
-  <line x1="730" y1="540" x2="810" y2="480" stroke="#e2e8f0" stroke-width="4"/>
-  <text x="140" y="110" fill="#94a3b8" font-size="20" font-family="Arial">Reference IAM architecture (sanitized)</text>
+  <title id="title">Reference IAM architecture</title>
+  <desc id="desc">Monochrome enterprise IAM architecture with identity core, control layers, and audit outputs.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111111"/>
+      <stop offset="100%" stop-color="#1d1d1d"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#202020"/>
+      <stop offset="100%" stop-color="#2b2b2b"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <g opacity="0.1" stroke="#ffffff" stroke-width="1">
+    <path d="M0 120 H1200"/>
+    <path d="M0 220 H1200"/>
+    <path d="M0 320 H1200"/>
+    <path d="M0 420 H1200"/>
+    <path d="M0 520 H1200"/>
+    <path d="M160 0 V700"/>
+    <path d="M360 0 V700"/>
+    <path d="M560 0 V700"/>
+    <path d="M760 0 V700"/>
+    <path d="M960 0 V700"/>
+  </g>
+  <g opacity="0.12">
+    <circle cx="1080" cy="120" r="180" fill="#ffffff"/>
+    <circle cx="140" cy="620" r="220" fill="#ffffff"/>
+  </g>
+
+  <text x="88" y="92" fill="#f5f5f5" font-size="44" font-family="Inter, Arial, sans-serif" font-weight="700">Reference IAM Architecture</text>
+  <text x="88" y="126" fill="#d8d8d8" font-size="24" font-family="Inter, Arial, sans-serif">Sanitized enterprise model: identity core, controls, and evidence</text>
+
+  <g stroke="#f2f2f2" stroke-opacity="0.3" stroke-width="2">
+    <path d="M375 262 L515 196" fill="none"/>
+    <path d="M375 262 L515 348" fill="none"/>
+    <path d="M375 262 L515 500" fill="none"/>
+    <path d="M790 196 L930 262" fill="none"/>
+    <path d="M790 348 L930 262" fill="none"/>
+    <path d="M790 500 L930 500" fill="none"/>
+  </g>
+
+  <g>
+    <rect x="88" y="170" width="288" height="184" rx="18" fill="url(#panel)" stroke="#f3f3f3" stroke-opacity="0.35"/>
+    <text x="118" y="235" fill="#ffffff" font-size="34" font-family="Inter, Arial, sans-serif" font-weight="700">Identity Core</text>
+    <text x="118" y="273" fill="#dddddd" font-size="21" font-family="Inter, Arial, sans-serif">Okta / Auth0 / Entra / Keycloak</text>
+    <text x="118" y="305" fill="#cfcfcf" font-size="18" font-family="Inter, Arial, sans-serif">Federation + policy decision point</text>
+  </g>
+
+  <g>
+    <rect x="515" y="130" width="275" height="132" rx="16" fill="#262626" stroke="#ffffff" stroke-opacity="0.32"/>
+    <text x="550" y="182" fill="#ffffff" font-size="30" font-family="Inter, Arial, sans-serif" font-weight="700">SSO + MFA</text>
+    <text x="550" y="216" fill="#d9d9d9" font-size="18" font-family="Inter, Arial, sans-serif">Adaptive authentication controls</text>
+  </g>
+
+  <g>
+    <rect x="515" y="282" width="275" height="132" rx="16" fill="#262626" stroke="#ffffff" stroke-opacity="0.32"/>
+    <text x="550" y="334" fill="#ffffff" font-size="30" font-family="Inter, Arial, sans-serif" font-weight="700">Lifecycle</text>
+    <text x="550" y="368" fill="#d9d9d9" font-size="18" font-family="Inter, Arial, sans-serif">Joiner / mover / leaver automation</text>
+  </g>
+
+  <g>
+    <rect x="515" y="434" width="275" height="132" rx="16" fill="#262626" stroke="#ffffff" stroke-opacity="0.32"/>
+    <text x="550" y="486" fill="#ffffff" font-size="30" font-family="Inter, Arial, sans-serif" font-weight="700">Governance</text>
+    <text x="550" y="520" fill="#d9d9d9" font-size="18" font-family="Inter, Arial, sans-serif">Access review and entitlement controls</text>
+  </g>
+
+  <g>
+    <rect x="930" y="170" width="190" height="184" rx="18" fill="url(#panel)" stroke="#ffffff" stroke-opacity="0.34"/>
+    <text x="956" y="235" fill="#ffffff" font-size="31" font-family="Inter, Arial, sans-serif" font-weight="700">Apps + APIs</text>
+    <text x="956" y="272" fill="#d9d9d9" font-size="18" font-family="Inter, Arial, sans-serif">SaaS / cloud / legacy</text>
+  </g>
+
+  <g>
+    <rect x="930" y="408" width="190" height="158" rx="18" fill="#f5f5f5" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.38"/>
+    <text x="954" y="468" fill="#ffffff" font-size="29" font-family="Inter, Arial, sans-serif" font-weight="700">Audit Evidence</text>
+    <text x="954" y="503" fill="#e7e7e7" font-size="18" font-family="Inter, Arial, sans-serif">DORA / GDPR traceability</text>
+  </g>
+
+  <circle cx="792" cy="500" r="4.8" fill="#ffffff" filter="url(#glow)"/>
+  <circle cx="515" cy="500" r="4.8" fill="#ffffff" filter="url(#glow)"/>
+  <circle cx="930" cy="500" r="4.8" fill="#ffffff" filter="url(#glow)"/>
 </svg>

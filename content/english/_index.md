@@ -4,6 +4,7 @@ banner:
   title: "Modernize enterprise IAM without downtime, audit pain, or login friction."
   content: "Aegisoft helps regulated enterprises migrate and harden identity architecture across workforce and customer systems. We design and deliver secure IAM programs for financial services, healthcare, SaaS, and public-sector organizations."
   image: "/images/proof-iam-architecture.svg"
+  visual_type: "architecture-html"
   button:
     enable: true
     label: "Talk to an IAM Architect"
@@ -22,6 +23,7 @@ banner:
 features:  
   - title: "Proof-Driven IAM Programs"
     image: "/images/proof-delivery-workflow.svg"
+    visual_type: "workflow-html"
     content: "We scope IAM programs around measurable outcomes, risk constraints, and operating realities so leadership can approve with confidence."
     bulletpoints:
       - "**Who we serve:** CTO, CISO, IAM Lead, Enterprise Architect"
@@ -36,6 +38,7 @@ features:
 
   - title: "Case Evidence and Architecture Decisions"
     image: "/images/proof-before-after.png"
+    visual_type: "before-after-html"
     content: "Each engagement includes explicit architecture choices, measurable outcomes, and implementation constraints so procurement and engineering can evaluate risk clearly."
     bulletpoints:
       - "Anonymized enterprise case studies with size, region, and compliance constraints"
@@ -50,6 +53,7 @@ features:
 
   - title: "Conversion Paths by Buyer Intent"
     image: "/images/proof-compliance-controls.svg"
+    visual_type: "compliance-html"
     content: "Choose an entry point that matches your current priority instead of one generic consultation request."
     bulletpoints:
       - "**High intent:** 30-minute IAM architecture consultation"
@@ -65,6 +69,7 @@ features:
 
   - title: "Trust Signals Enterprise Buyers Need"
     image: "/images/proof-iam-architecture.svg"
+    visual_type: "architecture-mini-html"
     content: "Proof assets and company transparency are visible across the site so buyers can evaluate delivery confidence quickly."
     bulletpoints:
       - "Anonymized but specific case studies with measurable outcomes and stack details"
