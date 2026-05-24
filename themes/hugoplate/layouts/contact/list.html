@@ -37,9 +37,7 @@
           <p id="popupMessage" class="text-green-500"></p>
         </div>
 
-        <form id="contact-form" method="POST">
-          <!-- reCAPTCHA disabled until domain is added -->
-          <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+        <form id="contact-form" method="POST" data-endpoint="https://api.aegisoft.es/contact">
           <div class="mb-6">
             <label for="first_name" class="form-label">
               First Name <span class="text-red-500">*</span>
@@ -185,13 +183,6 @@
     });
   }
 
-  // reCAPTCHA disabled until domain is added
-  // grecaptcha.ready(function() {
-  //   grecaptcha.execute('6LfvTB0qAAAAAJKb-ayOnYI_fpA9ukwWIiU1ZL5X', {action: 'submit'}).then(function(token) {
-  //     document.getElementById('g-recaptcha-response').value = token;
-  //   });
-  // });
-
   function showPopup(message, isSuccess = true) {
     const popup = document.getElementById('popup');
     const popupMessage = document.getElementById('popupMessage');
@@ -204,29 +195,28 @@
     }, 3000);
   }
 
-  document.getElementById('contact-form').addEventListener('submit', function (event) {
+  document.getElementById('contact-form').addEventListener('submit', async function (event) {
     event.preventDefault();
 
-    // Validate required fields
+    const form = event.currentTarget;
+    const submitButton = form.querySelector('button[type="submit"]');
     const requiredFields = ['first_name', 'last_name', 'email', 'engagement_type', 'subject', 'message'];
     let isValid = true;
+
+    form.querySelectorAll('[data-field-error]').forEach(error => error.remove());
+
     requiredFields.forEach(function (field) {
-      const input = document.getElementsByName(field)[0];
-      const isCheckbox = input.type === 'checkbox';
-      if ((isCheckbox && !input.checked) || (!isCheckbox && !input.value)) {
+      const input = form.elements[field];
+      if (!input.value.trim()) {
         isValid = false;
         input.classList.add('border-red-500');
         const errorText = document.createElement('span');
         errorText.classList.add('text-red-500', 'text-sm');
+        errorText.setAttribute('data-field-error', '');
         errorText.textContent = 'This field is required';
-        if (!input.nextElementSibling) {
-          input.parentNode.appendChild(errorText);
-        }
+        input.parentNode.appendChild(errorText);
       } else {
         input.classList.remove('border-red-500');
-        if (input.nextElementSibling) {
-          input.parentNode.removeChild(input.nextElementSibling);
-        }
       }
     });
 
@@ -235,84 +225,47 @@
       return;
     }
 
-    const consentInput = document.getElementsByName('privacy_consent')[0];
+    const consentInput = form.elements['privacy_consent'];
     if (!consentInput.checked) {
       showPopup('Please provide privacy consent before submitting.', false);
       return;
     }
 
+    const formData = new FormData(form);
+    formData.set('privacy_consent', 'true');
+
     showPopup('Sending...', true);
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending...';
 
-    // Execute reCAPTCHA Enterprise and then submit the form
-    grecaptcha.enterprise.ready(function () {
-      grecaptcha.enterprise.execute('6Lf15FwrAAAAAKr-6yaXn8GyHLdt2yT5P7Pla--m', { action: 'submit' })
-        .then(function (token) {
-          const form = document.getElementById('contact-form');
-          const formData = new FormData(form);
+    try {
+      const response = await fetch(form.dataset.endpoint, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
 
-          // Step 1: Verify the token with your backend
-          fetch('https://email.raise.systems/verifycaptcha', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'Accept': 'application/json'
-            },
-            body: JSON.stringify({
-              recaptchaToken: token,
-              recaptchaAction: 'submit'
-            })
-          })
-            .then(response => response.json())
-            .then(verification => {
-              if (!verification.valid || !verification.actionMatch || verification.score < 0.3) {
-                let reason = verification.reasons?.join(', ') || 'Unknown reason';
-                showPopup(`reCAPTCHA verification failed (Score: ${verification.score}). Reason: ${reason}`, false);
-                return;
-              }
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok) {
+        throw new Error(result.error || result.message || 'There was an error sending your request.');
+      }
 
-              // Step 2: CAPTCHA passed — continue form submission
-              formData.append('g-recaptcha-response', token);
-
-              fetch('https://email.raise.systems/sendemail', {
-                method: 'POST',
-                body: formData,
-                headers: {
-                  'Accept': 'application/json'
-                }
-              })
-                .then(async (emailResponse) => {
-                  if (!emailResponse.ok) {
-                    const emailError = await emailResponse.json();
-                    let errorMessage = emailError.message || emailError.error || 'There was an error sending your email.';
-
-                    if (errorMessage.includes('e164 format')) {
-                      errorMessage = 'Phone number should be in international format (e.g., +34612345678)';
-                    }
-
-                    showPopup(`Email Error: ${errorMessage}`, false);
-                  } else {
-                    form.reset();
-                    const inputs = form.querySelectorAll('input, textarea, button');
-                    inputs.forEach(input => input.disabled = true);
-                    showPopup('Message sent successfully!', true);
-                    if (typeof window.gtag === 'function') {
-                      window.gtag('event', 'contact_form_submit_success', {
-                        form_id: 'contact-form'
-                      });
-                    }
-                  }
-                })
-                .catch(error => {
-                  console.error('Form submission error:', error);
-                  showPopup(`Error: ${error.message || 'There was an error sending your message.'}`, false);
-                });
-            })
-            .catch(error => {
-              console.error('reCAPTCHA verification failed:', error);
-              showPopup('Error verifying reCAPTCHA token. Please try again later.', false);
-            });
+      form.reset();
+      showPopup('Request sent successfully.', true);
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'contact_form_submit_success', {
+          form_id: 'contact-form'
         });
-    });
+      }
+    } catch (error) {
+      console.error('Contact request failed:', error);
+      showPopup(error.message || 'There was an error sending your request.', false);
+    } finally {
+      submitButton.disabled = false;
+      submitButton.textContent = 'Submit Request';
+    }
   });
 </script>
 
