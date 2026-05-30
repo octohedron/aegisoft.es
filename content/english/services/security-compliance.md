@@ -1,7 +1,7 @@
 ---
 title: "Security & Compliance"
 meta_title: "IAM Security & Compliance Services - Aegisoft"
-description: "Ensure your identity infrastructure meets the highest security standards and regulatory requirements with Aegisoft' specialized IAM security and compliance services."
+description: "Improve identity security controls and regulatory readiness with Aegisoft CoopV's specialized IAM security and compliance services."
 image: "/images/proof-compliance-controls.svg"
 faqs:
   - question: "Can this service support both DORA and GDPR in one engagement?"
@@ -63,10 +63,10 @@ Strengthen IAM controls and prove compliance readiness with evidence-based secur
 
 ## Mini proof strip
 
-- 92% reduction in identity-related incidents for a global banking environment
-- 85% automation of compliance reporting workflows
-- 70% reduction in IAM audit preparation effort
-- Real-time detection and response for credential abuse scenarios
+- Control gap matrix mapped to DORA/GDPR and related IAM requirements
+- Prioritized remediation backlog with effort and risk estimates
+- Audit evidence structure for access reviews, MFA, federation, and lifecycle controls
+- Detection and response workflow recommendations for credential abuse scenarios
 
 Related case study:  
 [EU Payments Processor: DORA-Aligned IAM Modernization](/case-studies/eu-payments-dora-migration)

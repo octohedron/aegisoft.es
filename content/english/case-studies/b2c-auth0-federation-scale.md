@@ -12,10 +12,10 @@ faqs:
 draft: false
 ---
 
-## Client type, region, and size
+## Client type and scale
 
 - **Client profile:** B2C SaaS platform
-- **Region:** Europe and North America
+- **Region:** Anonymized multi-region customer base
 - **Scale:** 6.2M MAU, enterprise and SMB tenants
 - **Environment:** Auth0 tenant footprint, mixed custom federation patterns
 

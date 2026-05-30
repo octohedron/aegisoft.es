@@ -1,7 +1,8 @@
 {
-  "provider": "Aegisoft",
+  "provider": "Aegisoft CoopV",
   "providerUrl": "https://aegisoft.es",
-  "catalogVersion": "2026-02-28",
+  "providerCountry": "Spain",
+  "catalogVersion": "2026-05-30",
   "services": [
     {
       "name": "IAM Strategy Assessment",

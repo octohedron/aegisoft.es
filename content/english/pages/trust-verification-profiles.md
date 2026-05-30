@@ -1,24 +1,22 @@
 ---
 title: "Trust Verification Profiles"
 meta_title: "Aegisoft Trust Verification Profiles"
-description: "Third-party profiles and ecosystem references supporting Aegisoft trust verification."
+description: "Public profiles and references supporting Aegisoft CoopV trust verification."
 url: "/trust-verification-profiles/"
 draft: false
 ---
 
-## Company profiles
+## Company profile
 
-<!-- - Clutch: https://clutch.co/profile/aegisoft -->
-<!-- - Wikidata: https://www.wikidata.org/ -->
-<!-- - Crunchbase: https://www.crunchbase.com/organization/aegisoft -->
-<!-- - GoodFirms: https://www.goodfirms.co/company/aegisoft -->
 - LinkedIn: https://linkedin.com/company/aegisoft-coopv
 
-## Partner and ecosystem references
+## Ecosystem reference directories
 
-- Okta ecosystem profile: https://www.okta.com/partners/
-- Auth0 ecosystem listing: https://auth0.com/partners
-- Microsoft partner profile: https://partner.microsoft.com/
+These directories are useful for checking platform ecosystems. Aegisoft CoopV does not claim a listed partner profile unless one is linked here.
+
+- Okta partner directory: https://www.okta.com/partners/
+- Auth0 partner directory: https://auth0.com/partners
+- Microsoft partner directory: https://partner.microsoft.com/
 
 ## Public technical references
 

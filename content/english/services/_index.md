@@ -1,12 +1,12 @@
 ---
 title: "Our IAM Services"
-meta_title: "Enterprise IAM Services - Aegisoft"
-description: "Aegisoft delivers comprehensive identity and access management services for enterprise organizations, from strategy to implementation and managed services."
+meta_title: "Enterprise IAM Services - Aegisoft CoopV"
+description: "Aegisoft CoopV delivers identity and access management services for enterprise organizations, from strategy to implementation and managed services."
 image: "/images/proof-iam-architecture.svg"
 draft: false
 ---
 
-Aegisoft delivers IAM services across strategy, implementation, security/compliance, and managed operations. Every engagement is scoped around outcomes, constraints, and measurable delivery milestones.
+Aegisoft CoopV, Spain, delivers IAM services across strategy, implementation, security/compliance, and managed operations. Every engagement is scoped around outcomes, constraints, and measurable delivery milestones.
 
 ## Who this is for
 

@@ -1,7 +1,7 @@
 ---
-title: "About Aegisoft"
-meta_title: "About Aegisoft - Enterprise IAM Consulting"
-description: "Aegisoft is an enterprise IAM consultancy focused on measurable delivery outcomes across strategy, migration, security, and compliance."
+title: "About Aegisoft CoopV"
+meta_title: "About Aegisoft CoopV - Enterprise IAM Consulting"
+description: "Aegisoft CoopV is a Spain-based enterprise IAM consultancy focused on measurable delivery outcomes across strategy, migration, security, and compliance."
 image: "/images/avatar.png"
 proof_points:
   - "Enterprise IAM specialization across strategy, implementation, compliance, and operations"
@@ -36,7 +36,7 @@ draft: false
 
 ## What we do
 
-Aegisoft focuses exclusively on enterprise Identity and Access Management. We help regulated organizations modernize identity architecture with delivery plans that are practical, measurable, and aligned with operational constraints.
+Aegisoft CoopV is a Spain-based enterprise Identity and Access Management consultancy. We help regulated organizations modernize identity architecture with delivery plans that are practical, measurable, and aligned with operational constraints.
 
 ## Who we work with
 
@@ -63,7 +63,7 @@ We work across Okta, Auth0, Microsoft Entra ID, Keycloak, and related enterprise
 - Methodology and guidance are published as buyer guides and technical resources
 - Company/legal transparency is available via legal notice, privacy policy, and brand facts
 
-## Why buyers choose Aegisoft
+## Why buyers choose Aegisoft CoopV
 
 - IAM-only specialization, not broad generic consulting
 - Evidence-first delivery instead of narrative-only positioning

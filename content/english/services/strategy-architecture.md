@@ -63,10 +63,10 @@ Design an IAM strategy that can pass enterprise scrutiny: clear target-state arc
 
 ## Mini proof strip
 
-- Consolidated 12 legacy identity systems for a global financial institution
-- Reduced identity-related incidents by 78% in a strategy-led transformation
-- Reduced user onboarding from days to minutes through lifecycle redesign
-- Enabled secure partner/API access for 200+ external integrations
+- Current-state IAM architecture baseline
+- Target-state options with platform and protocol decision criteria
+- Phased roadmap with risks, dependencies, and rollback considerations
+- Compliance and operating-model implications documented for leadership review
 
 See the full delivery narrative:  
 [EU Payments Processor: DORA-Aligned IAM Modernization](/case-studies/eu-payments-dora-migration)

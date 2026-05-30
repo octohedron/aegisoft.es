@@ -11,12 +11,14 @@
     "legalName" "Aegisoft CoopV"
     "url" $baseURL
     "description" site.Params.metadata.description
-    "areaServed" (slice "Europe" "North America")
+    "taxID" "F75405555"
+    "address" (dict "@type" "PostalAddress" "streetAddress" "Escriptor Abu Salt 1, 10" "addressLocality" "Valencia" "postalCode" "46009" "addressCountry" "ES")
+    "areaServed" (slice "Spain" "European Union")
     "knowsAbout" (slice "Identity and Access Management" "OAuth 2.1" "OpenID Connect" "SAML" "SCIM" "FIDO2" "DORA" "GDPR")
-    "sameAs" (slice "https://linkedin.com/company/aegisoft-coopv" "https://www.crunchbase.com/organization/aegisoft")
+    "sameAs" (slice "https://linkedin.com/company/aegisoft-coopv")
     "contactPoint" (slice (dict "@type" "ContactPoint" "contactType" "sales" "email" "info@aegisoft.es") (dict "@type" "ContactPoint" "contactType" "customer support" "email" "info@aegisoft.es"))
   }}
-  <script type="application/ld+json">{{ $org | jsonify | safeHTML }}</script>
+  {{ printf `<script type="application/ld+json">%s</script>` ($org | jsonify) | safeHTML }}
 
   {{ $website := dict
     "@context" "https://schema.org"
@@ -26,7 +28,7 @@
     "name" $siteName
     "potentialAction" (dict "@type" "SearchAction" "target" (printf "%ssearch/" $baseURL) "query-input" "required name=search_term_string")
   }}
-  <script type="application/ld+json">{{ $website | jsonify | safeHTML }}</script>
+  {{ printf `<script type="application/ld+json">%s</script>` ($website | jsonify) | safeHTML }}
 {{ end }}
 
 {{ if and .IsPage (eq .Section "authors") }}
@@ -37,10 +39,10 @@
     "description" .Description
     "email" .Params.email
     "url" $pageURL
-    "worksFor" (dict "@type" "Organization" "name" $siteName "url" $baseURL)
+    "worksFor" (dict "@type" "Organization" "name" "Aegisoft CoopV" "url" $baseURL)
     "sameAs" (slice "https://linkedin.com/in/gstrod")
   }}
-  <script type="application/ld+json">{{ $person | jsonify | safeHTML }}</script>
+  {{ printf `<script type="application/ld+json">%s</script>` ($person | jsonify) | safeHTML }}
 {{ end }}
 
 {{ if and .IsPage (eq .Section "services") }}
@@ -51,12 +53,12 @@
     "description" .Description
     "provider" (dict "@type" "ProfessionalService" "name" $siteName "url" $baseURL)
     "serviceType" .Title
-    "areaServed" (slice "Europe" "North America")
+    "areaServed" (slice "Spain" "European Union")
     "audience" (dict "@type" "Audience" "audienceType" "Enterprise organizations")
     "availableChannel" (dict "@type" "ServiceChannel" "serviceUrl" (printf "%sconsultation/" $baseURL))
     "url" $pageURL
   }}
-  <script type="application/ld+json">{{ $service | jsonify | safeHTML }}</script>
+  {{ printf `<script type="application/ld+json">%s</script>` ($service | jsonify) | safeHTML }}
 {{ end }}
 
 {{ if and .IsPage (in $pageURL "/offers/") }}
@@ -67,11 +69,11 @@
     "description" .Description
     "provider" (dict "@type" "ProfessionalService" "name" $siteName "url" $baseURL)
     "serviceType" .Title
-    "areaServed" (slice "Europe" "North America")
+    "areaServed" (slice "Spain" "European Union")
     "availableChannel" (dict "@type" "ServiceChannel" "serviceUrl" (printf "%sconsultation/book-iam-architecture-review/" $baseURL))
     "url" $pageURL
   }}
-  <script type="application/ld+json">{{ $offerService | jsonify | safeHTML }}</script>
+  {{ printf `<script type="application/ld+json">%s</script>` ($offerService | jsonify) | safeHTML }}
 {{ end }}
 
 {{ if and .IsPage (or (eq .Section "blog") (eq .Section "guides") (eq .Section "case-studies")) }}
@@ -95,11 +97,11 @@
     "mainEntityOfPage" $pageURL
     "datePublished" $published
     "dateModified" $modified
-    "author" (dict "@type" "Person" "name" (.Params.author | default "Aegisoft"))
+    "author" (dict "@type" "Person" "name" (.Params.author | default "Aegisoft CoopV"))
     "publisher" (dict "@type" "Organization" "name" $siteName "url" $baseURL)
     "about" (.Params.tags | default (slice "IAM"))
   }}
-  <script type="application/ld+json">{{ $article | jsonify | safeHTML }}</script>
+  {{ printf `<script type="application/ld+json">%s</script>` ($article | jsonify) | safeHTML }}
 {{ end }}
 
 {{ if and .IsPage (eq .Section "case-studies") }}
@@ -113,7 +115,7 @@
     "abstract" (.Params.outcome_highlight | default .Description)
     "provider" (dict "@type" "Organization" "name" $siteName "url" $baseURL)
   }}
-  <script type="application/ld+json">{{ $case | jsonify | safeHTML }}</script>
+  {{ printf `<script type="application/ld+json">%s</script>` ($case | jsonify) | safeHTML }}
 {{ end }}
 
 {{ if and .IsPage (eq .Section "guides") .Params.recommendation_options }}
@@ -127,7 +129,7 @@
     "name" .Title
     "itemListElement" $items
   }}
-  <script type="application/ld+json">{{ $itemList | jsonify | safeHTML }}</script>
+  {{ printf `<script type="application/ld+json">%s</script>` ($itemList | jsonify) | safeHTML }}
 {{ end }}
 
 {{ if and .IsPage .Params.faqs }}
@@ -140,7 +142,7 @@
     "@type" "FAQPage"
     "mainEntity" $faqEntities
   }}
-  <script type="application/ld+json">{{ $faq | jsonify | safeHTML }}</script>
+  {{ printf `<script type="application/ld+json">%s</script>` ($faq | jsonify) | safeHTML }}
 {{ end }}
 
 {{ if .IsPage }}
@@ -154,5 +156,5 @@
   {{ end }}
   {{ $crumbs = $crumbs | append (dict "@type" "ListItem" "position" $pos "name" .Title "item" $pageURL) }}
   {{ $bread := dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $crumbs }}
-  <script type="application/ld+json">{{ $bread | jsonify | safeHTML }}</script>
+  {{ printf `<script type="application/ld+json">%s</script>` ($bread | jsonify) | safeHTML }}
 {{ end }}

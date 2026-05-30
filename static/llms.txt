@@ -1,6 +1,6 @@
 Site: https://aegisoft.es
-Title: Aegisoft - Enterprise IAM Consulting
-Last-Updated: 2026-02-28
+Title: Aegisoft CoopV, Spain - Enterprise IAM Consulting
+Last-Updated: 2026-05-30
 
 Primary pages:
 - /brand-facts/

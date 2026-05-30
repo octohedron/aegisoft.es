@@ -11,7 +11,7 @@ logo_height = "32px"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 logo_webp = true
 # logo text will only show when logo is missing.
-logo_text = "Aegisoft"
+logo_text = "Aegisoft CoopV"
 # navbar fixed to top
 navbar_fixed = true
 # theme-mode
@@ -63,8 +63,8 @@ content = "You must replace the **baseURL** in **hugo.toml** file when deploying
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
 keywords = ["IAM", "Identity and Access Management", "Authentication", "Authorization", "OAuth", "OIDC", "SAML", "Okta", "Auth0", "Keycloak", "Enterprise Security"]
-description = "Aegisoft helps regulated enterprises modernize IAM with measurable outcomes across migration, compliance, and secure access architecture."
-author = "Aegisoft"
+description = "Aegisoft CoopV, Spain, helps regulated enterprises modernize IAM with measurable outcomes across migration, compliance, and secure access architecture."
+author = "Aegisoft CoopV"
 twitter = "aegisoft"
 image = "images/og-image.png"
 

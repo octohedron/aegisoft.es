@@ -1,10 +1,10 @@
 ---
 title: "Our IAM Experts"
-meta_title: "Aegisoft IAM Experts and Thought Leaders"
-description: "Meet the industry-leading identity and access management experts at Aegisoft who help enterprises secure and optimize their IAM infrastructure."
+meta_title: "Aegisoft CoopV IAM Experts"
+description: "Meet the founder-led identity and access management expertise behind Aegisoft CoopV."
 ---
 
-Aegisoft experts combine architecture, engineering, and compliance experience to deliver outcome-focused IAM programs for regulated enterprises.
+Aegisoft CoopV combines architecture, engineering, and compliance experience to deliver outcome-focused IAM programs for regulated enterprises.
 
 Representative expertise across the team includes:
 

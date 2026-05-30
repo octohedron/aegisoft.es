@@ -12,10 +12,10 @@ faqs:
 draft: false
 ---
 
-## Client type, region, and size
+## Client type and size
 
 - **Client profile:** Multi-site healthcare provider
-- **Region:** North America, distributed hospital and outpatient network
+- **Region:** Anonymized multi-site healthcare network
 - **Scale:** 50,000 staff, 500+ integrated applications
 - **Environment:** Mixed cloud and on-prem applications with legacy clinical integrations
 

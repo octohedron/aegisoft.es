@@ -2,7 +2,7 @@
 title: Gustavo Rodríguez
 email: info@aegisoft.es
 image: "/images/portrait-gus.png"
-description: "Founder and CEO of Aegisoft"
+description: "Founder and CEO of Aegisoft CoopV"
 social:
   - name: github
     icon: fa-brands fa-github
@@ -17,4 +17,4 @@ social:
     link: https://linkedin.com/in/gstrod
 ---
 
-Gustavo Rodríguez is the founder and CEO of Aegisoft, with over 20 years of experience in enterprise security architecture and identity solutions. As the technical visionary behind the company, he leads the development of innovative IAM strategies and solutions for Fortune 500 clients. Gustavo is a recognized thought leader in the identity space, having contributed to industry standards and spoken at major security conferences worldwide.
+Gustavo Rodríguez is the founder and CEO of Aegisoft CoopV, a Spain-based enterprise IAM consultancy. He has over 20 years of experience in enterprise software, security architecture, and identity solutions, and leads Aegisoft's founder-led IAM strategy, architecture, and implementation work.

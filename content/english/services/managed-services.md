@@ -25,7 +25,7 @@ Operate IAM as a reliable service with clear SLAs, security oversight, and conti
 
 - Recurring IAM incidents are impacting users or audit posture
 - Internal teams are overloaded with manual IAM operations
-- You need 24/7 monitoring without building a full IAM operations team
+- You need stronger monitoring and escalation without building a full IAM operations team
 - Platform upgrades and policy changes are risky or delayed
 
 ## What you get in the first engagement
@@ -53,7 +53,7 @@ Operate IAM as a reliable service with clear SLAs, security oversight, and conti
 - Platform administration (Okta/Auth0/Entra/Keycloak and related systems)
 - Lifecycle operations and access workflows
 - Authentication/federation policy management
-- 24/7 monitoring, incident response, and escalation
+- Monitoring, incident response, and escalation workflows scoped to the agreed service level
 - Compliance reporting and audit support
 
 ## Relevant platforms and protocols
@@ -63,10 +63,10 @@ Operate IAM as a reliable service with clear SLAs, security oversight, and conti
 
 ## Mini proof strip
 
-- 99.99% IAM availability for global operations
-- 85% reduction in identity-related incidents
-- 40% reduction in IAM operating cost compared to internal-only model
-- Provisioning lead time reduced from weeks to hours
+- Operations baseline and service transition plan
+- Runbooks for incident, change, and escalation workflows
+- Monitoring and reporting model tied to service levels
+- Provisioning and lifecycle improvement backlog
 
 ## Next step
 
@@ -80,7 +80,7 @@ Yes. Hybrid delivery is supported with clear ownership split and escalation path
 
 ### What response model is available?
 
-Business-hours and follow-the-sun support options are available based on service level.
+Business-hours support is the default. Extended coverage can be scoped explicitly when the operating model requires it.
 
 ### Do managed services include security and compliance reporting?
 

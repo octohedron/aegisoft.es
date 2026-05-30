@@ -1,8 +1,11 @@
 ---
+title: "Modernize enterprise IAM without downtime, audit pain, or login friction."
+meta_title: "Modernize enterprise IAM without downtime, audit pain, or login friction."
+description: "Aegisoft CoopV, Spain, helps regulated enterprises modernize IAM with practical migration, compliance, and secure access architecture."
 # Banner
 banner:
   title: "Modernize enterprise IAM without downtime, audit pain, or login friction."
-  content: "Aegisoft helps regulated enterprises migrate and harden identity architecture across workforce and customer systems. We design and deliver secure IAM programs for financial services, healthcare, SaaS, and public-sector organizations."
+  content: "Aegisoft CoopV, Spain, helps regulated enterprises migrate and harden identity architecture across workforce and customer systems. We design and deliver secure IAM programs for financial services, healthcare, SaaS, and public-sector organizations."
   image: "/images/proof-iam-architecture.svg"
   visual_type: "architecture-html"
   button:
@@ -75,7 +78,7 @@ features:
       - "Anonymized but specific case studies with measurable outcomes and stack details"
       - "Founder-led expert profile with public technical thought leadership"
       - "Thought leadership archive and security/compliance methodology artifacts"
-      - "Legal/company transparency via privacy policy and legal notice"
+      - "Spain-based company transparency via privacy policy, legal notice, and brand facts"
       - "Dedicated pages for DORA/GDPR, migration, and platform-specific buying intent"
       - "**Best fit:** regulated enterprises with complex IAM architecture decisions"
       - "**Not best fit:** broad non-IAM transformations needing large multi-domain staffing"

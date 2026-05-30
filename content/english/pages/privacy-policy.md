@@ -1,22 +1,22 @@
 ---
 title: "Privacy Policy"
 # meta title
-meta_title: "Aegisoft Privacy Policy"
+meta_title: "Aegisoft CoopV Privacy Policy"
 # meta description
-description: "Aegisoft is committed to protecting your privacy. Learn how we collect, use, and safeguard your information when you use our website and services."
+description: "Aegisoft CoopV explains how it collects, uses, and safeguards information when you use the website or contact us about IAM consulting services."
 # save as draft
 draft: false
 ---
 
 ## Introduction
 
-At Aegisoft, we take data privacy seriously. As identity and access management specialists, we understand the critical importance of protecting personal information. This Privacy Policy outlines our practices regarding the collection, use, and disclosure of information when you use our website and services.
+Aegisoft CoopV is a Spain-based enterprise Identity and Access Management consulting company. This Privacy Policy explains how we collect, use, and protect personal information when you use our website or contact us about our services.
 
 ## Information We Collect
 
 ### Website Visitors
 
-When you visit the Aegisoft website, we may collect certain information automatically, including:
+When you visit the Aegisoft CoopV website, we may collect certain information automatically, including:
 
 - IP address and browser information
 - Pages visited and time spent on our website
@@ -44,7 +44,7 @@ If you subscribe to our newsletter or download resources, we collect:
 
 ## How We Use Your Information
 
-Aegisoft uses the collected information for the following purposes:
+Aegisoft CoopV uses the collected information for the following purposes:
 
 1. **Providing Services**: To deliver the IAM consulting services you request
 2. **Communication**: To respond to inquiries and maintain contact regarding services
@@ -53,7 +53,7 @@ Aegisoft uses the collected information for the following purposes:
 
 ## Data Protection
 
-As IAM security experts, we implement robust measures to protect your information:
+We use practical administrative and technical measures to protect your information:
 
 - Encryption of data in transit and at rest
 - Regular security assessments and updates
@@ -62,7 +62,7 @@ As IAM security experts, we implement robust measures to protect your informatio
 
 ## Third-Party Sharing
 
-Aegisoft does not sell your personal information to third parties. We may share information with:
+Aegisoft CoopV does not sell your personal information to third parties. We may share information with:
 
 - Service providers who assist in our operations (under strict confidentiality agreements)
 - Professional advisors such as lawyers, auditors, and insurers
@@ -86,17 +86,17 @@ Our website uses cookies and similar technologies to enhance user experience and
 
 ## International Data Transfers
 
-As a global company with offices across North America, Europe, and Asia-Pacific, Aegisoft may transfer your information across international borders. We ensure appropriate safeguards are in place to protect your information during such transfers, in compliance with applicable data protection laws.
+Aegisoft CoopV is based in Spain. If we use service providers that process information outside the European Economic Area, we rely on appropriate safeguards required by applicable data protection law.
 
 ## Changes to This Policy
 
-Aegisoft may update this Privacy Policy periodically to reflect changes in our practices or regulatory requirements. We will notify you of significant changes through our website or direct communication.
+Aegisoft CoopV may update this Privacy Policy periodically to reflect changes in our practices or regulatory requirements. We will notify you of significant changes through our website or direct communication.
 
 ## Contact Us
 
-If you have questions or concerns about our Privacy Policy or data practices, please contact our Data Protection Officer at:
+If you have questions or concerns about this Privacy Policy or our data practices, please contact us at:
 
 **Email**: info@aegisoft.es  
-**Address**: Aegisoft Privacy Office, 555 Madison Avenue, 5th Floor, New York, NY 10022
+**Address**: Aegisoft CoopV, Escriptor Abu Salt 1, 10, Valencia, 46009, España
 
-Last Updated: March 1, 2025
+Last Updated: May 30, 2026
